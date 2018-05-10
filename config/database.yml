@@ -1,0 +1,20 @@
+con: &conn
+    username: temperature
+    password: temperature
+    host: 127.0.0.1
+    adapter: postgresql # mysql2
+    encoding: utf8
+    secure_auth: false
+    pool: 20
+development:
+    database: temperature
+    #database: drug_request_test
+    <<: *conn
+
+test:
+    database: drug_request_test
+    <<: *conn
+
+production:
+    database: temperature
+    <<: *conn

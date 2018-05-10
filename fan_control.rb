@@ -18,9 +18,9 @@ ActiveRecord::Schema.define do
   unless table_exists?(:temperatures)
     create_table :temperatures do |t|
       t.datetime :measure_time
-      t.float  :out_temp
-      t.float  :in_temp
-      t.integer  :fan_speed,   limit: 7
+      t.float :out_temp
+      t.float :in_temp
+      t.integer :fan_speed, limit: 7
     end
   end
 

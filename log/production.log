@@ -1,0 +1,270 @@
+I, [2018-05-10T16:50:19.174054 #7728]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:50:19 +0700
+I, [2018-05-10T16:50:19.188158 #7728]  INFO -- : Processing by HomeController#index as HTML
+I, [2018-05-10T16:50:19.193855 #7728]  INFO -- : Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+F, [2018-05-10T16:50:19.194697 #7728] FATAL -- : 
+ActionView::MissingTemplate (Missing template home/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/vasivik/fan_control/app/views"
+):
+  actionview (4.2.8) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.8) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.8) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.8) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/vasivik/.rvm/rubies/ruby-2.3.7/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.10) lib/rack/etag.rb:24:in `call'
+  rack (1.6.10) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.10) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.10) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.10) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:152:in `accept_and_process_next_request'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:113:in `main_loop'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/request_handler.rb:416:in `block (3 levels) in start_threads'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+I, [2018-05-10T16:50:19.195188 #7728]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:50:19 +0700
+I, [2018-05-10T16:50:19.195646 #7728]  INFO -- : Processing by HomeController#index as HTML
+I, [2018-05-10T16:50:19.195972 #7728]  INFO -- : Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+F, [2018-05-10T16:50:19.196753 #7728] FATAL -- : 
+ActionView::MissingTemplate (Missing template home/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/vasivik/fan_control/app/views"
+):
+  actionview (4.2.8) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.8) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.8) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.8) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/vasivik/.rvm/rubies/ruby-2.3.7/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.10) lib/rack/etag.rb:24:in `call'
+  rack (1.6.10) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.10) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.10) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.10) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:152:in `accept_and_process_next_request'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:113:in `main_loop'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/request_handler.rb:416:in `block (3 levels) in start_threads'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+I, [2018-05-10T16:51:24.995650 #8611]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:51:24 +0700
+I, [2018-05-10T16:51:25.010885 #8611]  INFO -- : Processing by HomeController#index as HTML
+I, [2018-05-10T16:51:25.017683 #8611]  INFO -- :   Rendered home/index.html.erb (0.3ms)
+I, [2018-05-10T16:51:25.017830 #8611]  INFO -- : Completed 200 OK in 7ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+I, [2018-05-10T16:52:08.382359 #9201]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:52:08 +0700
+I, [2018-05-10T16:52:08.393777 #9201]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:52:08.398840 #9201] DEBUG -- :   [1m[36mTemperature Load (0.6ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:52:08.405612 #9201]  INFO -- :   Rendered home/index.html.erb (0.3ms)
+I, [2018-05-10T16:52:08.405760 #9201]  INFO -- : Completed 200 OK in 12ms (Views: 2.6ms | ActiveRecord: 2.3ms)
+I, [2018-05-10T16:53:26.296289 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:53:26 +0700
+I, [2018-05-10T16:53:26.315338 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:53:26.323500 #10134] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:53:26.334568 #10134]  INFO -- :   Rendered home/index.html.erb (0.9ms)
+I, [2018-05-10T16:53:26.334765 #10134]  INFO -- : Completed 200 OK in 19ms (Views: 4.3ms | ActiveRecord: 3.4ms)
+I, [2018-05-10T16:53:31.634648 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:53:31 +0700
+I, [2018-05-10T16:53:31.635309 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:53:31.635922 #10134] DEBUG -- :   [1m[35mTemperature Load (0.2ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:53:31.636357 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T16:53:31.636433 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T16:53:32.221947 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:53:32 +0700
+I, [2018-05-10T16:53:32.222559 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:53:32.223128 #10134] DEBUG -- :   [1m[36mTemperature Load (0.2ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:53:32.223525 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T16:53:32.223598 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T16:53:32.692118 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:53:32 +0700
+I, [2018-05-10T16:53:32.693826 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:53:32.695779 #10134] DEBUG -- :   [1m[35mTemperature Load (0.8ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:53:32.697393 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:53:32.697716 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T16:53:33.149657 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:53:33 +0700
+I, [2018-05-10T16:53:33.151493 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:53:33.153542 #10134] DEBUG -- :   [1m[36mTemperature Load (0.9ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:53:33.155127 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:53:33.155465 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.9ms)
+I, [2018-05-10T16:53:33.715106 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:53:33 +0700
+I, [2018-05-10T16:53:33.716970 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:53:33.719042 #10134] DEBUG -- :   [1m[35mTemperature Load (0.8ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:53:33.720591 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:53:33.720962 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T16:53:34.237763 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:53:34 +0700
+I, [2018-05-10T16:53:34.238940 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:53:34.240175 #10134] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:53:34.241190 #10134]  INFO -- :   Rendered home/index.html.erb (0.4ms)
+I, [2018-05-10T16:53:34.241428 #10134]  INFO -- : Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+I, [2018-05-10T16:53:34.434641 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:53:34 +0700
+I, [2018-05-10T16:53:34.436265 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:53:34.438253 #10134] DEBUG -- :   [1m[35mTemperature Load (0.8ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:53:34.439758 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:53:34.440079 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T16:53:34.621712 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:53:34 +0700
+I, [2018-05-10T16:53:34.623291 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:53:34.625225 #10134] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:53:34.626702 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:53:34.627032 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T16:53:35.030371 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:53:35 +0700
+I, [2018-05-10T16:53:35.030961 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:53:35.031520 #10134] DEBUG -- :   [1m[35mTemperature Load (0.2ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:53:35.031921 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T16:53:35.032001 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T16:53:35.235576 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:53:35 +0700
+I, [2018-05-10T16:53:35.236676 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:53:35.237909 #10134] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:53:35.238828 #10134]  INFO -- :   Rendered home/index.html.erb (0.3ms)
+I, [2018-05-10T16:53:35.239024 #10134]  INFO -- : Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+I, [2018-05-10T16:53:35.478681 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:53:35 +0700
+I, [2018-05-10T16:53:35.480302 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:53:35.482255 #10134] DEBUG -- :   [1m[35mTemperature Load (0.8ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:53:35.483727 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:53:35.484034 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T16:53:36.757716 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:53:36 +0700
+I, [2018-05-10T16:53:36.759572 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:53:36.761647 #10134] DEBUG -- :   [1m[36mTemperature Load (0.9ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:53:36.763203 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:53:36.763561 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.9ms)
