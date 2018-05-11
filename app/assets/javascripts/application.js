@@ -16,3 +16,4 @@
 //= require_tree .
 //= require c3
 //= require d3
+//= require bootstrap-sprockets

@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'bootstrap-sass', '~> 3.3.7'
 gem 'c3-rails'
 gem 'd3-rails', '3.5.17'
 gem 'rails', '4.2.8'

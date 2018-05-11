@@ -1,18 +1,34 @@
-In temp: <%= @temperature_last.in_temp %><br/>
-Out temp: <%= @temperature_last.out_temp %><br/>
-Fan speed: <%= @temperature_last.fan_speed %><br/>
-Measure time: <%= @temperature_last.measure_time %><br/>
-
-<div id="temperature">
+<div class="panel panel-default">
+  <div class="panel-heading">Current temp</div>
+  <div class="panel-body">
+    In temp: <span class="label label-default"> <%= @temperature_last.in_temp %></span>
+    Out temp: <span class="label label-default"> <%= @temperature_last.out_temp %></span>
+    Fan speed: <span class="label label-default"> <%= @temperature_last.fan_speed %></span>
+    Measure time: <span class="label label-default"> <%= @temperature_last.measure_time.strftime('%d-%m-%Y %H:%M') %></span>
+  </div>
 </div>
 
-<div id="fan_speed">
+<div class="panel panel-default">
+  <div class="panel-heading">Temperature</div>
+  <div class="panel-body">
+    <div id="temperature">
+    </div>
+  </div>
 </div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Fan speed</div>
+  <div class="panel-body">
+    <div id="fan_speed">
+    </div>
+  </div>
+</div>
+
 <script>
     var chart = c3.generate({
         bindto: '#temperature',
         size: {
-            height: 440
+            height: 380
         },
         data: {
             columns: [
@@ -39,7 +55,6 @@ Measure time: <%= @temperature_last.measure_time %><br/>
                 type: 'category',
                 categories: <%= raw @labels %>,
                 tick: {
-                    rotate: 75,
                     multiline: false,
                     count: 20
                 }
@@ -53,7 +68,7 @@ Measure time: <%= @temperature_last.measure_time %><br/>
     var chart = c3.generate({
         bindto: '#fan_speed',
         size: {
-            height: 440
+            height: 380
         },
         data: {
             columns: [
@@ -79,7 +94,6 @@ Measure time: <%= @temperature_last.measure_time %><br/>
                 type: 'category',
                 categories: <%= raw @labels %>,
                 tick: {
-                    rotate: 75,
                     multiline: false,
                     count: 20
                 }
