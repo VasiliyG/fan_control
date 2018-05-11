@@ -268,3 +268,1120 @@ I, [2018-05-10T16:53:36.759572 #10134]  INFO -- : Processing by HomeController#i
 D, [2018-05-10T16:53:36.761647 #10134] DEBUG -- :   [1m[36mTemperature Load (0.9ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
 I, [2018-05-10T16:53:36.763203 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
 I, [2018-05-10T16:53:36.763561 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.9ms)
+I, [2018-05-10T16:56:11.319691 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:11 +0700
+I, [2018-05-10T16:56:11.321584 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:11.323631 #10134] DEBUG -- :   [1m[35mTemperature Load (0.8ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:56:11.325204 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:56:11.325520 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T16:56:11.882293 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:11 +0700
+I, [2018-05-10T16:56:11.882767 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:11.883274 #10134] DEBUG -- :   [1m[36mTemperature Load (0.2ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:56:11.883639 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T16:56:11.883709 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T16:56:12.237743 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:12 +0700
+I, [2018-05-10T16:56:12.238314 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:12.238853 #10134] DEBUG -- :   [1m[35mTemperature Load (0.2ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:56:12.239257 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T16:56:12.239333 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T16:56:12.456493 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:12 +0700
+I, [2018-05-10T16:56:12.458212 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:12.460214 #10134] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:56:12.461838 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:56:12.462179 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T16:56:12.730923 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:12 +0700
+I, [2018-05-10T16:56:12.732590 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:12.734589 #10134] DEBUG -- :   [1m[35mTemperature Load (0.8ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:56:12.736244 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:56:12.736577 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T16:56:13.157576 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:13 +0700
+I, [2018-05-10T16:56:13.158154 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:13.158717 #10134] DEBUG -- :   [1m[36mTemperature Load (0.2ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:56:13.159121 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T16:56:13.159196 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T16:56:13.715201 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:13 +0700
+I, [2018-05-10T16:56:13.715766 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:13.716336 #10134] DEBUG -- :   [1m[35mTemperature Load (0.2ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:56:13.716727 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T16:56:13.716801 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T16:56:14.085078 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:14 +0700
+I, [2018-05-10T16:56:14.085629 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:14.086206 #10134] DEBUG -- :   [1m[36mTemperature Load (0.2ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:56:14.086602 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T16:56:14.086677 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T16:56:14.264136 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:14 +0700
+I, [2018-05-10T16:56:14.264715 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:14.265332 #10134] DEBUG -- :   [1m[35mTemperature Load (0.2ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:56:14.265732 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T16:56:14.265806 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T16:56:14.495146 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:14 +0700
+I, [2018-05-10T16:56:14.495581 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:14.496065 #10134] DEBUG -- :   [1m[36mTemperature Load (0.2ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:56:14.496428 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T16:56:14.496497 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T16:56:14.960928 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:14 +0700
+I, [2018-05-10T16:56:14.961383 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:14.961867 #10134] DEBUG -- :   [1m[35mTemperature Load (0.2ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:56:14.962215 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T16:56:14.962283 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T16:56:15.544321 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:15 +0700
+I, [2018-05-10T16:56:15.544930 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:15.545496 #10134] DEBUG -- :   [1m[36mTemperature Load (0.2ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:56:15.545883 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T16:56:15.545963 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T16:56:15.713358 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:15 +0700
+I, [2018-05-10T16:56:15.713777 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:15.714247 #10134] DEBUG -- :   [1m[35mTemperature Load (0.2ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:56:15.714589 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T16:56:15.714656 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T16:56:15.921797 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:15 +0700
+I, [2018-05-10T16:56:15.923417 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:15.925417 #10134] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:56:15.926958 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:56:15.927287 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T16:56:16.120056 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:16 +0700
+I, [2018-05-10T16:56:16.121865 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:16.123896 #10134] DEBUG -- :   [1m[35mTemperature Load (0.8ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:56:16.125456 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:56:16.125770 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T16:56:16.314219 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:16 +0700
+I, [2018-05-10T16:56:16.315326 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:16.316665 #10134] DEBUG -- :   [1m[36mTemperature Load (0.6ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:56:16.317811 #10134]  INFO -- :   Rendered home/index.html.erb (0.4ms)
+I, [2018-05-10T16:56:16.318061 #10134]  INFO -- : Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+I, [2018-05-10T16:56:16.525477 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:16 +0700
+I, [2018-05-10T16:56:16.526973 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:16.528754 #10134] DEBUG -- :   [1m[35mTemperature Load (0.7ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:56:16.530221 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:56:16.530542 #10134]  INFO -- : Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.7ms)
+I, [2018-05-10T16:56:16.752444 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:16 +0700
+I, [2018-05-10T16:56:16.753993 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:16.755785 #10134] DEBUG -- :   [1m[36mTemperature Load (0.7ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:56:16.757121 #10134]  INFO -- :   Rendered home/index.html.erb (0.4ms)
+I, [2018-05-10T16:56:16.757188 #10134]  INFO -- : Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+I, [2018-05-10T16:56:16.964296 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:16 +0700
+I, [2018-05-10T16:56:16.965802 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:16.967569 #10134] DEBUG -- :   [1m[35mTemperature Load (0.7ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:56:16.969024 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:56:16.969333 #10134]  INFO -- : Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.7ms)
+I, [2018-05-10T16:56:17.259971 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:17 +0700
+I, [2018-05-10T16:56:17.261719 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:17.263585 #10134] DEBUG -- :   [1m[36mTemperature Load (0.7ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:56:17.265065 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:56:17.265161 #10134]  INFO -- : Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.7ms)
+I, [2018-05-10T16:56:17.483125 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:17 +0700
+I, [2018-05-10T16:56:17.484610 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:17.486405 #10134] DEBUG -- :   [1m[35mTemperature Load (0.7ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:56:17.487815 #10134]  INFO -- :   Rendered home/index.html.erb (0.4ms)
+I, [2018-05-10T16:56:17.488143 #10134]  INFO -- : Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.7ms)
+I, [2018-05-10T16:56:17.664488 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:17 +0700
+I, [2018-05-10T16:56:17.666006 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:17.667768 #10134] DEBUG -- :   [1m[36mTemperature Load (0.7ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:56:17.669141 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:56:17.669205 #10134]  INFO -- : Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.7ms)
+I, [2018-05-10T16:56:17.876862 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:17 +0700
+I, [2018-05-10T16:56:17.878387 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:17.880143 #10134] DEBUG -- :   [1m[35mTemperature Load (0.7ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:56:17.881636 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:56:17.881945 #10134]  INFO -- : Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.7ms)
+I, [2018-05-10T16:56:18.358602 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:18 +0700
+I, [2018-05-10T16:56:18.360306 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:18.362210 #10134] DEBUG -- :   [1m[36mTemperature Load (0.7ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:56:18.363268 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T16:56:18.363336 #10134]  INFO -- : Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.7ms)
+I, [2018-05-10T16:56:18.686132 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:18 +0700
+I, [2018-05-10T16:56:18.687673 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:18.689471 #10134] DEBUG -- :   [1m[35mTemperature Load (0.7ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:56:18.690892 #10134]  INFO -- :   Rendered home/index.html.erb (0.4ms)
+I, [2018-05-10T16:56:18.691212 #10134]  INFO -- : Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.7ms)
+I, [2018-05-10T16:56:18.877829 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:18 +0700
+I, [2018-05-10T16:56:18.879316 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:18.881101 #10134] DEBUG -- :   [1m[36mTemperature Load (0.7ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:56:18.882503 #10134]  INFO -- :   Rendered home/index.html.erb (0.4ms)
+I, [2018-05-10T16:56:18.882821 #10134]  INFO -- : Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.7ms)
+I, [2018-05-10T16:56:19.077245 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:19 +0700
+I, [2018-05-10T16:56:19.078923 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:19.080787 #10134] DEBUG -- :   [1m[35mTemperature Load (0.7ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:56:19.082287 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:56:19.082595 #10134]  INFO -- : Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.7ms)
+I, [2018-05-10T16:56:19.720551 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:19 +0700
+I, [2018-05-10T16:56:19.722238 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:19.724112 #10134] DEBUG -- :   [1m[36mTemperature Load (0.7ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:56:19.725223 #10134]  INFO -- :   Rendered home/index.html.erb (0.2ms)
+I, [2018-05-10T16:56:19.725290 #10134]  INFO -- : Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.7ms)
+I, [2018-05-10T16:56:20.350899 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:20 +0700
+I, [2018-05-10T16:56:20.352703 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:20.354732 #10134] DEBUG -- :   [1m[35mTemperature Load (0.8ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:56:20.356244 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:56:20.356576 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T16:56:20.603404 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:20 +0700
+I, [2018-05-10T16:56:20.605051 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:20.606956 #10134] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:56:20.608381 #10134]  INFO -- :   Rendered home/index.html.erb (0.4ms)
+I, [2018-05-10T16:56:20.608711 #10134]  INFO -- : Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T16:56:20.866163 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:20 +0700
+I, [2018-05-10T16:56:20.867780 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:20.869705 #10134] DEBUG -- :   [1m[35mTemperature Load (0.8ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:56:20.871149 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:56:20.871455 #10134]  INFO -- : Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T16:56:22.327290 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:22 +0700
+I, [2018-05-10T16:56:22.329152 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:22.331170 #10134] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:56:22.332659 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:56:22.333002 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T16:56:23.803734 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:23 +0700
+I, [2018-05-10T16:56:23.805576 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:23.807586 #10134] DEBUG -- :   [1m[35mTemperature Load (0.8ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:56:23.809119 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:56:23.809430 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T16:56:24.209181 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:24 +0700
+I, [2018-05-10T16:56:24.209807 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:24.210449 #10134] DEBUG -- :   [1m[36mTemperature Load (0.3ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:56:24.210912 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T16:56:24.211012 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+I, [2018-05-10T16:56:26.198981 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:26 +0700
+I, [2018-05-10T16:56:26.199588 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:26.200175 #10134] DEBUG -- :   [1m[35mTemperature Load (0.2ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:56:26.200585 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T16:56:26.200661 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T16:56:26.736588 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:26 +0700
+I, [2018-05-10T16:56:26.738253 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:26.740187 #10134] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:56:26.741695 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:56:26.742017 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T16:56:27.238389 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:27 +0700
+I, [2018-05-10T16:56:27.239501 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:27.240690 #10134] DEBUG -- :   [1m[35mTemperature Load (0.5ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:56:27.241758 #10134]  INFO -- :   Rendered home/index.html.erb (0.4ms)
+I, [2018-05-10T16:56:27.241991 #10134]  INFO -- : Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+I, [2018-05-10T16:56:27.676237 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:27 +0700
+I, [2018-05-10T16:56:27.677879 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:27.679794 #10134] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:56:27.681284 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:56:27.681610 #10134]  INFO -- : Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T16:56:28.153216 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:28 +0700
+I, [2018-05-10T16:56:28.155005 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:28.157024 #10134] DEBUG -- :   [1m[35mTemperature Load (0.9ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:56:28.158504 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:56:28.158838 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.9ms)
+I, [2018-05-10T16:56:28.602414 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:28 +0700
+I, [2018-05-10T16:56:28.604200 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:28.606228 #10134] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:56:28.607736 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:56:28.608142 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T16:56:31.202607 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:31 +0700
+I, [2018-05-10T16:56:31.203206 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:31.203797 #10134] DEBUG -- :   [1m[35mTemperature Load (0.3ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:56:31.204214 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T16:56:31.204291 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+I, [2018-05-10T16:56:31.901887 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:31 +0700
+I, [2018-05-10T16:56:31.902370 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:31.902885 #10134] DEBUG -- :   [1m[36mTemperature Load (0.2ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:56:31.903248 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T16:56:31.903322 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T16:56:32.141749 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:32 +0700
+I, [2018-05-10T16:56:32.142307 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:32.142875 #10134] DEBUG -- :   [1m[35mTemperature Load (0.2ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T16:56:32.143257 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T16:56:32.143328 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T16:56:32.338000 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 16:56:32 +0700
+I, [2018-05-10T16:56:32.339777 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T16:56:32.341786 #10134] DEBUG -- :   [1m[36mTemperature Load (0.9ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T16:56:32.343283 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T16:56:32.343591 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.9ms)
+I, [2018-05-10T17:13:04.248934 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 17:13:04 +0700
+I, [2018-05-10T17:13:04.249509 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:13:04.250074 #10134] DEBUG -- :   [1m[35mTemperature Load (0.2ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T17:13:04.250456 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T17:13:04.250525 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T17:13:04.723732 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 17:13:04 +0700
+I, [2018-05-10T17:13:04.725454 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:13:04.727414 #10134] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T17:13:04.728914 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T17:13:04.729230 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T17:13:04.870467 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 17:13:04 +0700
+I, [2018-05-10T17:13:04.872067 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:13:04.873992 #10134] DEBUG -- :   [1m[35mTemperature Load (0.8ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T17:13:04.875399 #10134]  INFO -- :   Rendered home/index.html.erb (0.4ms)
+I, [2018-05-10T17:13:04.875724 #10134]  INFO -- : Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T17:13:05.024802 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 17:13:05 +0700
+I, [2018-05-10T17:13:05.025408 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:13:05.025961 #10134] DEBUG -- :   [1m[36mTemperature Load (0.2ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T17:13:05.026339 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T17:13:05.026412 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T17:13:06.435785 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 17:13:06 +0700
+I, [2018-05-10T17:13:06.437640 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:13:06.439625 #10134] DEBUG -- :   [1m[35mTemperature Load (0.8ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T17:13:06.441166 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T17:13:06.441480 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T17:13:06.607319 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 17:13:06 +0700
+I, [2018-05-10T17:13:06.608958 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:13:06.610854 #10134] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T17:13:06.612276 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T17:13:06.612578 #10134]  INFO -- : Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T17:13:06.810944 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 17:13:06 +0700
+I, [2018-05-10T17:13:06.812512 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:13:06.814412 #10134] DEBUG -- :   [1m[35mTemperature Load (0.8ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T17:13:06.815818 #10134]  INFO -- :   Rendered home/index.html.erb (0.4ms)
+I, [2018-05-10T17:13:06.816139 #10134]  INFO -- : Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T17:31:27.641893 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 17:31:27 +0700
+I, [2018-05-10T17:31:27.643737 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:31:27.646374 #10134] DEBUG -- :   [1m[36mTemperature Load (1.4ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T17:31:27.647852 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T17:31:27.648184 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 1.4ms)
+I, [2018-05-10T17:31:29.296982 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 17:31:29 +0700
+I, [2018-05-10T17:31:29.298822 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:31:29.300858 #10134] DEBUG -- :   [1m[35mTemperature Load (0.8ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T17:31:29.302406 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T17:31:29.302728 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T17:31:29.454969 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 17:31:29 +0700
+I, [2018-05-10T17:31:29.456563 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:31:29.458502 #10134] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T17:31:29.459933 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T17:31:29.460245 #10134]  INFO -- : Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T17:38:45.356858 #10134]  INFO -- : Started GET "/" for 149.154.167.168 at 2018-05-10 17:38:45 +0700
+I, [2018-05-10T17:38:45.358688 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:38:45.360700 #10134] DEBUG -- :   [1m[35mTemperature Load (0.8ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T17:38:45.362226 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T17:38:45.362542 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T17:39:03.853668 #10134]  INFO -- : Started GET "/" for 94.25.171.61 at 2018-05-10 17:39:03 +0700
+I, [2018-05-10T17:39:03.854322 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:39:03.854974 #10134] DEBUG -- :   [1m[36mTemperature Load (0.3ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T17:39:03.855414 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T17:39:03.855493 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+I, [2018-05-10T17:39:12.458454 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 17:39:12 +0700
+I, [2018-05-10T17:39:12.460243 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:39:12.462205 #10134] DEBUG -- :   [1m[35mTemperature Load (0.8ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T17:39:12.463681 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T17:39:12.464006 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T17:39:13.188387 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 17:39:13 +0700
+I, [2018-05-10T17:39:13.189030 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:39:13.189572 #10134] DEBUG -- :   [1m[36mTemperature Load (0.2ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T17:39:13.189947 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T17:39:13.190016 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T17:39:17.675128 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 17:39:17 +0700
+I, [2018-05-10T17:39:17.675726 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:39:17.676283 #10134] DEBUG -- :   [1m[35mTemperature Load (0.2ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T17:39:17.676662 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T17:39:17.676731 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T17:39:18.159027 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 17:39:18 +0700
+I, [2018-05-10T17:39:18.159589 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:39:18.160144 #10134] DEBUG -- :   [1m[36mTemperature Load (0.2ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T17:39:18.160525 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T17:39:18.160598 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T17:39:18.504114 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 17:39:18 +0700
+I, [2018-05-10T17:39:18.504667 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:39:18.505259 #10134] DEBUG -- :   [1m[35mTemperature Load (0.2ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T17:39:18.505634 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T17:39:18.505707 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T17:39:18.677041 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 17:39:18 +0700
+I, [2018-05-10T17:39:18.677438 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:39:18.677896 #10134] DEBUG -- :   [1m[36mTemperature Load (0.2ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T17:39:18.678223 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T17:39:18.678287 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T17:39:19.013915 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 17:39:19 +0700
+I, [2018-05-10T17:39:19.015946 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:39:19.018154 #10134] DEBUG -- :   [1m[35mTemperature Load (0.8ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T17:39:19.019643 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T17:39:19.019956 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T17:39:19.800808 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 17:39:19 +0700
+I, [2018-05-10T17:39:19.801412 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:39:19.801968 #10134] DEBUG -- :   [1m[36mTemperature Load (0.2ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T17:39:19.802345 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T17:39:19.802414 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T17:39:20.369691 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 17:39:20 +0700
+I, [2018-05-10T17:39:20.370242 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:39:20.370797 #10134] DEBUG -- :   [1m[35mTemperature Load (0.2ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T17:39:20.371177 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T17:39:20.371249 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T17:39:20.551943 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 17:39:20 +0700
+I, [2018-05-10T17:39:20.552347 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:39:20.552766 #10134] DEBUG -- :   [1m[36mTemperature Load (0.2ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T17:39:20.553128 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T17:39:20.553192 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T17:39:20.771088 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 17:39:20 +0700
+I, [2018-05-10T17:39:20.771483 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:39:20.771939 #10134] DEBUG -- :   [1m[35mTemperature Load (0.2ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T17:39:20.772258 #10134]  INFO -- :   Rendered home/index.html.erb (0.1ms)
+I, [2018-05-10T17:39:20.772322 #10134]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2018-05-10T17:40:46.574144 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 17:40:46 +0700
+I, [2018-05-10T17:40:46.575933 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:40:46.577957 #10134] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T17:40:46.579449 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T17:40:46.579757 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T17:42:23.148377 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 17:42:23 +0700
+I, [2018-05-10T17:42:23.150231 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:42:23.152223 #10134] DEBUG -- :   [1m[35mTemperature Load (0.8ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T17:42:23.153728 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T17:42:23.154064 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T17:42:25.420247 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 17:42:25 +0700
+I, [2018-05-10T17:42:25.422091 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T17:42:25.424083 #10134] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T17:42:25.425593 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T17:42:25.425925 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T19:22:21.409726 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 19:22:21 +0700
+I, [2018-05-10T19:22:21.413588 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T19:22:21.417690 #10134] DEBUG -- :   [1m[35mTemperature Load (2.0ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T19:22:21.419817 #10134]  INFO -- :   Rendered home/index.html.erb (0.7ms)
+I, [2018-05-10T19:22:21.420170 #10134]  INFO -- : Completed 200 OK in 6ms (Views: 1.7ms | ActiveRecord: 2.0ms)
+I, [2018-05-10T19:22:22.455541 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 19:22:22 +0700
+I, [2018-05-10T19:22:22.457384 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T19:22:22.459386 #10134] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T19:22:22.460916 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T19:22:22.461251 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T19:29:38.934829 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 19:29:38 +0700
+I, [2018-05-10T19:29:38.936655 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T19:29:38.938730 #10134] DEBUG -- :   [1m[35mTemperature Load (0.9ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T19:29:38.940220 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T19:29:38.940540 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.9ms)
+I, [2018-05-10T19:31:58.321858 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 19:31:58 +0700
+I, [2018-05-10T19:31:58.323661 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T19:31:58.325689 #10134] DEBUG -- :   [1m[36mTemperature Load (0.9ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T19:31:58.327174 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T19:31:58.327506 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.9ms)
+I, [2018-05-10T19:31:59.155473 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 19:31:59 +0700
+I, [2018-05-10T19:31:59.156513 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T19:31:59.157539 #10134] DEBUG -- :   [1m[35mTemperature Load (0.4ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T19:31:59.158222 #10134]  INFO -- :   Rendered home/index.html.erb (0.2ms)
+I, [2018-05-10T19:31:59.158357 #10134]  INFO -- : Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+I, [2018-05-10T19:31:59.791948 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 19:31:59 +0700
+I, [2018-05-10T19:31:59.793760 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T19:31:59.795745 #10134] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T19:31:59.797276 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T19:31:59.797591 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T19:32:00.820142 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 19:32:00 +0700
+I, [2018-05-10T19:32:00.821938 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T19:32:00.823915 #10134] DEBUG -- :   [1m[35mTemperature Load (0.8ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T19:32:00.825442 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T19:32:00.825754 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T19:32:01.843118 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 19:32:01 +0700
+I, [2018-05-10T19:32:01.844927 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T19:32:01.846931 #10134] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+I, [2018-05-10T19:32:01.848436 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T19:32:01.848763 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T19:32:02.906974 #10134]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 19:32:02 +0700
+I, [2018-05-10T19:32:02.908804 #10134]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T19:32:02.910816 #10134] DEBUG -- :   [1m[35mTemperature Load (0.8ms)[0m  SELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1
+I, [2018-05-10T19:32:02.912323 #10134]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T19:32:02.912653 #10134]  INFO -- : Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+I, [2018-05-10T19:41:51.224711 #7542]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 19:41:51 +0700
+I, [2018-05-10T19:41:51.244579 #7542]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T19:41:51.249672 #7542] DEBUG -- :   [1m[36mTemperature Load (0.6ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T19:41:51.256798 #7542] DEBUG -- :   [1m[35mTemperature Load (2.5ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T19:41:51.309447 #7542]  INFO -- : Completed 500 Internal Server Error in 65ms (ActiveRecord: 5.2ms)
+F, [2018-05-10T19:41:51.312485 #7542] FATAL -- : 
+NoMethodError (undefined method `keys' for #<Array:0x000056381167f9b8>):
+  app/controllers/home_controller.rb:11:in `index'
+
+
+D, [2018-05-10T19:42:16.652237 #7801] DEBUG -- :   [1m[36mTemperature Load (2.5ms)[0m  [1mSELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC[0m
+I, [2018-05-10T19:46:14.316167 #10533]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 19:46:14 +0700
+I, [2018-05-10T19:46:14.335552 #10533]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T19:46:14.343478 #10533] DEBUG -- :   [1m[36mTemperature Load (1.0ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T19:46:14.352750 #10533] DEBUG -- :   [1m[35mTemperature Load (3.3ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T19:46:17.273381 #10533]  INFO -- :   Rendered home/index.html.erb (0.6ms)
+I, [2018-05-10T19:46:17.273494 #10533]  INFO -- : Completed 200 OK in 2938ms (Views: 3.0ms | ActiveRecord: 6.6ms)
+I, [2018-05-10T19:46:17.307031 #10533]  INFO -- : Started GET "/images/gruff.png" for 10.20.30.1 at 2018-05-10 19:46:17 +0700
+F, [2018-05-10T19:46:17.307614 #10533] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/gruff.png"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:152:in `accept_and_process_next_request'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:113:in `main_loop'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/request_handler.rb:416:in `block (3 levels) in start_threads'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+I, [2018-05-10T19:46:41.371792 #10946]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 19:46:41 +0700
+I, [2018-05-10T19:46:41.383587 #10946]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T19:46:41.388500 #10946] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T19:46:41.394963 #10946] DEBUG -- :   [1m[35mTemperature Load (2.3ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T19:46:44.259267 #10946]  INFO -- :   Rendered home/index.html.erb (0.6ms)
+I, [2018-05-10T19:46:44.259378 #10946]  INFO -- : Completed 200 OK in 2876ms (Views: 2.9ms | ActiveRecord: 4.4ms)
+I, [2018-05-10T19:46:44.288743 #10946]  INFO -- : Started GET "/images/gruff.png" for 10.20.30.1 at 2018-05-10 19:46:44 +0700
+F, [2018-05-10T19:46:44.289337 #10946] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/gruff.png"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:152:in `accept_and_process_next_request'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:113:in `main_loop'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/request_handler.rb:416:in `block (3 levels) in start_threads'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+I, [2018-05-10T19:46:50.478858 #10946]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 19:46:50 +0700
+I, [2018-05-10T19:46:50.480772 #10946]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T19:46:50.482903 #10946] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T19:46:50.490928 #10946] DEBUG -- :   [1m[35mTemperature Load (7.1ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T19:46:53.381518 #10946]  INFO -- :   Rendered home/index.html.erb (0.2ms)
+I, [2018-05-10T19:46:53.381616 #10946]  INFO -- : Completed 200 OK in 2901ms (Views: 0.5ms | ActiveRecord: 7.9ms)
+I, [2018-05-10T19:46:53.412170 #10946]  INFO -- : Started GET "/images/gruff.png" for 10.20.30.1 at 2018-05-10 19:46:53 +0700
+F, [2018-05-10T19:46:53.412795 #10946] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/gruff.png"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:152:in `accept_and_process_next_request'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:113:in `main_loop'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/request_handler.rb:416:in `block (3 levels) in start_threads'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+I, [2018-05-10T19:47:18.308607 #11449]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 19:47:18 +0700
+I, [2018-05-10T19:47:18.324401 #11449]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T19:47:18.330077 #11449] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T19:47:18.336504 #11449] DEBUG -- :   [1m[35mTemperature Load (2.3ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T19:47:21.212984 #11449]  INFO -- :   Rendered home/index.html.erb (0.6ms)
+I, [2018-05-10T19:47:21.213092 #11449]  INFO -- : Completed 200 OK in 2889ms (Views: 2.8ms | ActiveRecord: 4.5ms)
+I, [2018-05-10T19:47:21.237280 #11449]  INFO -- : Started GET "/images/public/gruff.png" for 10.20.30.1 at 2018-05-10 19:47:21 +0700
+F, [2018-05-10T19:47:21.237847 #11449] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/public/gruff.png"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:152:in `accept_and_process_next_request'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:113:in `main_loop'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/request_handler.rb:416:in `block (3 levels) in start_threads'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+I, [2018-05-10T19:48:46.213513 #12507]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 19:48:46 +0700
+I, [2018-05-10T19:48:46.226495 #12507]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T19:48:46.231433 #12507] DEBUG -- :   [1m[36mTemperature Load (0.6ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T19:48:46.238139 #12507] DEBUG -- :   [1m[35mTemperature Load (2.4ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T19:48:49.125297 #12507]  INFO -- :   Rendered home/index.html.erb (1.4ms)
+I, [2018-05-10T19:48:49.125395 #12507]  INFO -- : Completed 500 Internal Server Error in 2899ms (ActiveRecord: 4.7ms)
+F, [2018-05-10T19:48:49.125875 #12507] FATAL -- : 
+ActionView::Template::Error (undefined method `path' for Rails:Module):
+    3: Fan speed: <%= @temperature_last.fan_speed %><br/>
+    4: Measure time: <%= @temperature_last.measure_time %><br/>
+    5: 
+    6: <%= image_tag("#{Rails.path}/public/gruff.png") %>
+  app/views/home/index.html.erb:6:in `_app_views_home_index_html_erb__1485237856379579625_47353468665000'
+
+
+I, [2018-05-10T19:49:07.788898 #12860]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 19:49:07 +0700
+I, [2018-05-10T19:49:07.804691 #12860]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T19:49:07.811499 #12860] DEBUG -- :   [1m[36mTemperature Load (0.7ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T19:49:07.820523 #12860] DEBUG -- :   [1m[35mTemperature Load (3.2ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T19:49:10.668121 #12860]  INFO -- :   Rendered home/index.html.erb (0.6ms)
+I, [2018-05-10T19:49:10.668229 #12860]  INFO -- : Completed 200 OK in 2863ms (Views: 2.7ms | ActiveRecord: 6.1ms)
+I, [2018-05-10T19:49:10.691863 #12860]  INFO -- : Started GET "/home/vasivik/fan_control/public/gruff.png" for 10.20.30.1 at 2018-05-10 19:49:10 +0700
+F, [2018-05-10T19:49:10.692451 #12860] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/home/vasivik/fan_control/public/gruff.png"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:152:in `accept_and_process_next_request'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:113:in `main_loop'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/request_handler.rb:416:in `block (3 levels) in start_threads'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+I, [2018-05-10T19:49:59.783709 #13528]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 19:49:59 +0700
+I, [2018-05-10T19:49:59.800457 #13528]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T19:49:59.806630 #13528] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T19:49:59.813873 #13528] DEBUG -- :   [1m[35mTemperature Load (2.7ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T19:50:02.712929 #13528]  INFO -- :   Rendered home/index.html.erb (0.6ms)
+I, [2018-05-10T19:50:02.713036 #13528]  INFO -- : Completed 200 OK in 2912ms (Views: 2.8ms | ActiveRecord: 4.9ms)
+I, [2018-05-10T19:50:02.730209 #13528]  INFO -- : Started GET "/public/gruff.png" for 10.20.30.1 at 2018-05-10 19:50:02 +0700
+F, [2018-05-10T19:50:02.730708 #13528] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/public/gruff.png"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:152:in `accept_and_process_next_request'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:113:in `main_loop'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/request_handler.rb:416:in `block (3 levels) in start_threads'
+  passenger (5.2.3) src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+I, [2018-05-10T19:51:01.564401 #14489]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 19:51:01 +0700
+I, [2018-05-10T19:51:01.579246 #14489]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T19:51:01.585291 #14489] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T19:51:01.592259 #14489] DEBUG -- :   [1m[35mTemperature Load (2.2ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T19:51:04.448816 #14489]  INFO -- :   Rendered home/index.html.erb (0.6ms)
+I, [2018-05-10T19:51:04.448965 #14489]  INFO -- : Completed 200 OK in 2870ms (Views: 3.0ms | ActiveRecord: 4.5ms)
+I, [2018-05-10T19:54:04.804342 #16719]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 19:54:04 +0700
+I, [2018-05-10T19:54:04.821725 #16719]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T19:54:04.829075 #16719] DEBUG -- :   [1m[36mTemperature Load (0.7ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T19:54:04.838724 #16719] DEBUG -- :   [1m[35mTemperature Load (3.4ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T19:54:06.386299 #16719]  INFO -- :   Rendered home/index.html.erb (0.6ms)
+I, [2018-05-10T19:54:06.386413 #16719]  INFO -- : Completed 200 OK in 1565ms (Views: 2.9ms | ActiveRecord: 6.5ms)
+I, [2018-05-10T19:54:21.368235 #17010]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 19:54:21 +0700
+I, [2018-05-10T19:54:21.386666 #17010]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T19:54:21.394389 #17010] DEBUG -- :   [1m[36mTemperature Load (0.7ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T19:54:21.405015 #17010] DEBUG -- :   [1m[35mTemperature Load (3.8ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T19:54:23.033898 #17010]  INFO -- :   Rendered home/index.html.erb (0.5ms)
+I, [2018-05-10T19:54:23.034010 #17010]  INFO -- : Completed 200 OK in 1647ms (Views: 2.9ms | ActiveRecord: 7.1ms)
+I, [2018-05-10T19:55:36.262330 #17927]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 19:55:36 +0700
+I, [2018-05-10T19:55:36.273795 #17927]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T19:55:36.278682 #17927] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T19:55:36.284894 #17927] DEBUG -- :   [1m[35mTemperature Load (2.2ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T19:55:39.333893 #17927]  INFO -- :   Rendered home/index.html.erb (0.6ms)
+I, [2018-05-10T19:55:39.334007 #17927]  INFO -- : Completed 200 OK in 3060ms (Views: 2.8ms | ActiveRecord: 4.2ms)
+I, [2018-05-10T19:57:14.539509 #19240]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 19:57:14 +0700
+I, [2018-05-10T19:57:14.560175 #19240]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T19:57:14.566722 #19240] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T19:57:14.573323 #19240] DEBUG -- :   [1m[35mTemperature Load (2.4ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T19:57:17.611950 #19240]  INFO -- :   Rendered home/index.html.erb (0.6ms)
+I, [2018-05-10T19:57:17.612069 #19240]  INFO -- : Completed 200 OK in 3052ms (Views: 2.8ms | ActiveRecord: 4.5ms)
+I, [2018-05-10T20:00:00.464038 #21179]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 20:00:00 +0700
+I, [2018-05-10T20:00:00.475734 #21179]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T20:00:00.480670 #21179] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T20:00:00.487044 #21179] DEBUG -- :   [1m[35mTemperature Load (2.2ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T20:00:03.520417 #21179]  INFO -- :   Rendered home/index.html.erb (0.6ms)
+I, [2018-05-10T20:00:03.520528 #21179]  INFO -- : Completed 200 OK in 3045ms (Views: 2.8ms | ActiveRecord: 4.3ms)
+I, [2018-05-10T20:00:10.394928 #21179]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 20:00:10 +0700
+I, [2018-05-10T20:00:10.396984 #21179]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T20:00:10.399088 #21179] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T20:00:10.411075 #21179] DEBUG -- :   [1m[35mTemperature Load (11.0ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T20:00:13.429561 #21179]  INFO -- :   Rendered home/index.html.erb (0.2ms)
+I, [2018-05-10T20:00:13.429651 #21179]  INFO -- : Completed 200 OK in 3033ms (Views: 0.4ms | ActiveRecord: 11.8ms)
+I, [2018-05-10T20:00:14.531770 #21179]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 20:00:14 +0700
+I, [2018-05-10T20:00:14.533579 #21179]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T20:00:14.535652 #21179] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T20:00:14.547560 #21179] DEBUG -- :   [1m[35mTemperature Load (11.0ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T20:00:17.535561 #21179]  INFO -- :   Rendered home/index.html.erb (0.2ms)
+I, [2018-05-10T20:00:17.535650 #21179]  INFO -- : Completed 200 OK in 3002ms (Views: 0.4ms | ActiveRecord: 11.8ms)
+I, [2018-05-10T20:00:48.204191 #21179]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 20:00:48 +0700
+I, [2018-05-10T20:00:48.204810 #21179]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T20:00:48.205442 #21179] DEBUG -- :   [1m[36mTemperature Load (0.3ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T20:00:48.208397 #21179] DEBUG -- :   [1m[35mTemperature Load (2.7ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T20:00:51.198296 #21179]  INFO -- :   Rendered home/index.html.erb (0.3ms)
+I, [2018-05-10T20:00:51.198384 #21179]  INFO -- : Completed 200 OK in 2994ms (Views: 0.5ms | ActiveRecord: 3.0ms)
+I, [2018-05-10T20:02:55.147534 #21179]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 20:02:55 +0700
+I, [2018-05-10T20:02:55.149392 #21179]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T20:02:55.151438 #21179] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T20:02:55.163502 #21179] DEBUG -- :   [1m[35mTemperature Load (11.1ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T20:02:58.159059 #21179]  INFO -- :   Rendered home/index.html.erb (0.2ms)
+I, [2018-05-10T20:02:58.159150 #21179]  INFO -- : Completed 200 OK in 3010ms (Views: 0.4ms | ActiveRecord: 11.9ms)
+I, [2018-05-10T22:07:03.427177 #21179]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 22:07:03 +0700
+I, [2018-05-10T22:07:03.427958 #21179]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T22:07:03.428861 #21179] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T22:07:03.431813 #21179] DEBUG -- :   [1m[35mTemperature Load (2.7ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T22:07:06.475245 #21179]  INFO -- :   Rendered home/index.html.erb (0.2ms)
+I, [2018-05-10T22:07:06.475332 #21179]  INFO -- : Completed 200 OK in 3047ms (Views: 0.4ms | ActiveRecord: 3.2ms)
+I, [2018-05-10T22:16:44.017349 #21179]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 22:16:44 +0700
+I, [2018-05-10T22:16:44.017951 #21179]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T22:16:44.018533 #21179] DEBUG -- :   [1m[36mTemperature Load (0.2ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T22:16:44.021412 #21179] DEBUG -- :   [1m[35mTemperature Load (2.7ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T22:16:47.023617 #21179]  INFO -- :   Rendered home/index.html.erb (0.2ms)
+I, [2018-05-10T22:16:47.023708 #21179]  INFO -- : Completed 200 OK in 3006ms (Views: 0.5ms | ActiveRecord: 2.9ms)
+I, [2018-05-10T22:37:52.434282 #21179]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 22:37:52 +0700
+I, [2018-05-10T22:37:52.436142 #21179]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T22:37:52.438557 #21179] DEBUG -- :   [1m[36mTemperature Load (1.2ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T22:37:52.446992 #21179] DEBUG -- :   [1m[35mTemperature Load (7.6ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T22:37:55.438420 #21179]  INFO -- :   Rendered home/index.html.erb (0.2ms)
+I, [2018-05-10T22:37:55.438507 #21179]  INFO -- : Completed 200 OK in 3002ms (Views: 0.4ms | ActiveRecord: 8.8ms)
+I, [2018-05-10T22:40:20.159922 #21179]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 22:40:20 +0700
+I, [2018-05-10T22:40:20.161740 #21179]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T22:40:20.163745 #21179] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T22:40:20.171985 #21179] DEBUG -- :   [1m[35mTemperature Load (7.4ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T22:40:23.153810 #21179]  INFO -- :   Rendered home/index.html.erb (0.2ms)
+I, [2018-05-10T22:40:23.153897 #21179]  INFO -- : Completed 200 OK in 2992ms (Views: 0.5ms | ActiveRecord: 8.3ms)
+I, [2018-05-10T22:40:23.154366 #21179]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 22:40:23 +0700
+I, [2018-05-10T22:40:23.154887 #21179]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T22:40:23.155433 #21179] DEBUG -- :   [1m[36mTemperature Load (0.2ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T22:40:23.158430 #21179] DEBUG -- :   [1m[35mTemperature Load (2.8ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T22:40:26.155152 #21179]  INFO -- :   Rendered home/index.html.erb (0.2ms)
+I, [2018-05-10T22:40:26.155242 #21179]  INFO -- : Completed 200 OK in 3000ms (Views: 0.4ms | ActiveRecord: 3.0ms)
+I, [2018-05-10T22:43:02.919268 #21179]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 22:43:02 +0700
+I, [2018-05-10T22:43:02.921022 #21179]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T22:43:02.922985 #21179] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T22:43:02.930948 #21179] DEBUG -- :   [1m[35mTemperature Load (7.1ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T22:43:05.926029 #21179]  INFO -- :   Rendered home/index.html.erb (0.2ms)
+I, [2018-05-10T22:43:05.926126 #21179]  INFO -- : Completed 200 OK in 3005ms (Views: 0.4ms | ActiveRecord: 7.9ms)
+I, [2018-05-10T22:44:13.551749 #21179]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 22:44:13 +0700
+I, [2018-05-10T22:44:13.553584 #21179]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T22:44:13.555614 #21179] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T22:44:13.570518 #21179] DEBUG -- :   [1m[35mTemperature Load (14.0ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T22:44:16.585212 #21179]  INFO -- :   Rendered home/index.html.erb (0.2ms)
+I, [2018-05-10T22:44:16.585298 #21179]  INFO -- : Completed 200 OK in 3032ms (Views: 0.5ms | ActiveRecord: 14.8ms)
+I, [2018-05-10T22:48:33.554603 #21179]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 22:48:33 +0700
+I, [2018-05-10T22:48:33.556355 #21179]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T22:48:33.558370 #21179] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T22:48:33.566625 #21179] DEBUG -- :   [1m[35mTemperature Load (7.4ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T22:48:36.565219 #21179]  INFO -- :   Rendered home/index.html.erb (0.2ms)
+I, [2018-05-10T22:48:36.565308 #21179]  INFO -- : Completed 200 OK in 3009ms (Views: 0.5ms | ActiveRecord: 8.3ms)
+I, [2018-05-10T23:00:59.585350 #21179]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 23:00:59 +0700
+I, [2018-05-10T23:00:59.585911 #21179]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T23:00:59.586467 #21179] DEBUG -- :   [1m[36mTemperature Load (0.2ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T23:00:59.589482 #21179] DEBUG -- :   [1m[35mTemperature Load (2.8ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T23:01:02.605958 #21179]  INFO -- :   Rendered home/index.html.erb (0.2ms)
+I, [2018-05-10T23:01:02.606048 #21179]  INFO -- : Completed 200 OK in 3020ms (Views: 0.4ms | ActiveRecord: 3.0ms)
+I, [2018-05-10T23:01:25.959672 #21179]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 23:01:25 +0700
+I, [2018-05-10T23:01:25.961488 #21179]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T23:01:25.963511 #21179] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T23:01:25.971499 #21179] DEBUG -- :   [1m[35mTemperature Load (7.1ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T23:01:28.968170 #21179]  INFO -- :   Rendered home/index.html.erb (0.2ms)
+I, [2018-05-10T23:01:28.968261 #21179]  INFO -- : Completed 200 OK in 3007ms (Views: 0.4ms | ActiveRecord: 8.0ms)
+I, [2018-05-10T23:02:15.978205 #21179]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 23:02:15 +0700
+I, [2018-05-10T23:02:15.979968 #21179]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T23:02:15.981991 #21179] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T23:02:15.990353 #21179] DEBUG -- :   [1m[35mTemperature Load (7.5ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T23:02:19.011066 #21179]  INFO -- :   Rendered home/index.html.erb (0.2ms)
+I, [2018-05-10T23:02:19.011159 #21179]  INFO -- : Completed 200 OK in 3031ms (Views: 0.5ms | ActiveRecord: 8.4ms)
+I, [2018-05-10T23:11:38.883620 #21179]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 23:11:38 +0700
+I, [2018-05-10T23:11:38.885457 #21179]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T23:11:38.887487 #21179] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T23:11:38.896229 #21179] DEBUG -- :   [1m[35mTemperature Load (7.9ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T23:11:41.891887 #21179]  INFO -- :   Rendered home/index.html.erb (0.2ms)
+I, [2018-05-10T23:11:41.891977 #21179]  INFO -- : Completed 200 OK in 3006ms (Views: 0.4ms | ActiveRecord: 8.7ms)
+I, [2018-05-10T23:23:10.462361 #21179]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-10 23:23:10 +0700
+I, [2018-05-10T23:23:10.464140 #21179]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-10T23:23:10.466153 #21179] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-10T23:23:10.474354 #21179] DEBUG -- :   [1m[35mTemperature Load (7.4ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-10T23:23:13.495734 #21179]  INFO -- :   Rendered home/index.html.erb (0.2ms)
+I, [2018-05-10T23:23:13.495823 #21179]  INFO -- : Completed 200 OK in 3032ms (Views: 0.4ms | ActiveRecord: 8.2ms)
+I, [2018-05-11T09:17:55.937250 #31114]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 09:17:55 +0700
+I, [2018-05-11T09:17:55.963546 #31114]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T09:17:55.970061 #31114] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T09:17:55.982100 #31114] DEBUG -- :   [1m[35mTemperature Load (4.9ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T09:17:58.998683 #31114]  INFO -- :   Rendered home/index.html.erb (0.6ms)
+I, [2018-05-11T09:17:58.998795 #31114]  INFO -- : Completed 200 OK in 3035ms (Views: 2.9ms | ActiveRecord: 10.0ms)
+I, [2018-05-11T09:18:15.097915 #31114]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 09:18:15 +0700
+I, [2018-05-11T09:18:15.099789 #31114]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T09:18:15.101854 #31114] DEBUG -- :   [1m[36mTemperature Load (0.7ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T09:18:15.129257 #31114] DEBUG -- :   [1m[35mTemperature Load (26.5ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T09:18:18.135230 #31114]  INFO -- :   Rendered home/index.html.erb (0.2ms)
+I, [2018-05-11T09:18:18.135320 #31114]  INFO -- : Completed 200 OK in 3035ms (Views: 0.4ms | ActiveRecord: 27.2ms)
+I, [2018-05-11T09:18:22.494002 #31114]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 09:18:22 +0700
+I, [2018-05-11T09:18:22.495746 #31114]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T09:18:22.497754 #31114] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T09:18:22.508275 #31114] DEBUG -- :   [1m[35mTemperature Load (9.7ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T09:18:25.505654 #31114]  INFO -- :   Rendered home/index.html.erb (0.2ms)
+I, [2018-05-11T09:18:25.505740 #31114]  INFO -- : Completed 200 OK in 3010ms (Views: 0.4ms | ActiveRecord: 10.6ms)
+I, [2018-05-11T09:26:52.436765 #31114]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 09:26:52 +0700
+I, [2018-05-11T09:26:52.438605 #31114]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T09:26:52.440563 #31114] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T09:26:52.451091 #31114] DEBUG -- :   [1m[35mTemperature Load (9.7ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T09:26:55.490304 #31114]  INFO -- :   Rendered home/index.html.erb (0.2ms)
+I, [2018-05-11T09:26:55.490392 #31114]  INFO -- : Completed 200 OK in 3052ms (Views: 0.4ms | ActiveRecord: 10.5ms)
+I, [2018-05-11T09:46:25.366701 #31114]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 09:46:25 +0700
+I, [2018-05-11T09:46:25.368476 #31114]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T09:46:25.370514 #31114] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T09:46:25.380634 #31114] DEBUG -- :   [1m[35mTemperature Load (9.3ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T09:46:28.374942 #31114]  INFO -- :   Rendered home/index.html.erb (0.2ms)
+I, [2018-05-11T09:46:28.375031 #31114]  INFO -- : Completed 200 OK in 3006ms (Views: 0.4ms | ActiveRecord: 10.1ms)
+I, [2018-05-11T10:07:52.561859 #31114]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:07:52 +0700
+I, [2018-05-11T10:07:52.562438 #31114]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:07:52.562992 #31114] DEBUG -- :   [1m[36mTemperature Load (0.2ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:07:52.568068 #31114] DEBUG -- :   [1m[35mTemperature Load (4.9ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:07:55.657438 #31114]  INFO -- :   Rendered home/index.html.erb (0.2ms)
+I, [2018-05-11T10:07:55.657524 #31114]  INFO -- : Completed 200 OK in 3095ms (Views: 0.4ms | ActiveRecord: 5.1ms)
+I, [2018-05-11T10:19:58.698917 #31114]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:19:58 +0700
+I, [2018-05-11T10:19:58.699563 #31114]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:19:58.700145 #31114] DEBUG -- :   [1m[36mTemperature Load (0.2ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:19:58.705314 #31114] DEBUG -- :   [1m[35mTemperature Load (5.0ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:20:01.747624 #31114]  INFO -- :   Rendered home/index.html.erb (0.3ms)
+I, [2018-05-11T10:20:01.747716 #31114]  INFO -- : Completed 200 OK in 3048ms (Views: 0.5ms | ActiveRecord: 5.2ms)
+I, [2018-05-11T10:36:14.715188 #24294]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:36:14 +0700
+I, [2018-05-11T10:36:14.726885 #24294]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:36:14.731788 #24294] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:36:14.741093 #24294] DEBUG -- :   [1m[35mTemperature Load (5.1ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:36:14.767212 #24294]  INFO -- :   Rendered home/index.html.erb (0.6ms)
+I, [2018-05-11T10:36:14.767325 #24294]  INFO -- : Completed 200 OK in 40ms (Views: 2.9ms | ActiveRecord: 7.2ms)
+I, [2018-05-11T10:36:44.302428 #24739]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:36:44 +0700
+I, [2018-05-11T10:36:44.320802 #24739]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:36:44.328662 #24739] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:36:44.343966 #24739] DEBUG -- :   [1m[35mTemperature Load (8.5ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:36:44.377749 #24739]  INFO -- :   Rendered home/index.html.erb (0.6ms)
+I, [2018-05-11T10:36:44.377868 #24739]  INFO -- : Completed 200 OK in 57ms (Views: 3.0ms | ActiveRecord: 11.8ms)
+I, [2018-05-11T10:37:16.350237 #25182]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:37:16 +0700
+I, [2018-05-11T10:37:16.366054 #25182]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:37:16.372884 #25182] DEBUG -- :   [1m[36mTemperature Load (0.7ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:37:16.386061 #25182] DEBUG -- :   [1m[35mTemperature Load (7.3ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:37:16.421540 #25182]  INFO -- :   Rendered home/index.html.erb (0.6ms)
+I, [2018-05-11T10:37:16.421665 #25182]  INFO -- : Completed 200 OK in 56ms (Views: 3.1ms | ActiveRecord: 10.2ms)
+I, [2018-05-11T10:37:45.140413 #25586]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:37:45 +0700
+I, [2018-05-11T10:37:45.151769 #25586]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:37:45.156546 #25586] DEBUG -- :   [1m[36mTemperature Load (0.4ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:37:45.166051 #25586] DEBUG -- :   [1m[35mTemperature Load (5.6ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:37:45.193546 #25586]  INFO -- :   Rendered home/index.html.erb (0.6ms)
+I, [2018-05-11T10:37:45.193663 #25586]  INFO -- : Completed 200 OK in 42ms (Views: 2.9ms | ActiveRecord: 7.5ms)
+I, [2018-05-11T10:39:14.004694 #26701]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:39:14 +0700
+I, [2018-05-11T10:39:14.023172 #26701]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:39:14.031108 #26701] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:39:14.046467 #26701] DEBUG -- :   [1m[35mTemperature Load (8.5ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:39:14.081775 #26701]  INFO -- :   Rendered home/index.html.erb within layouts/application (0.6ms)
+I, [2018-05-11T10:39:14.082523 #26701]  INFO -- : Completed 200 OK in 59ms (Views: 3.6ms | ActiveRecord: 11.9ms)
+I, [2018-05-11T10:39:26.315905 #26701]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:39:26 +0700
+I, [2018-05-11T10:39:26.318028 #26701]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:39:26.320693 #26701] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:39:26.346985 #26701] DEBUG -- :   [1m[35mTemperature Load (25.3ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:39:26.407229 #26701]  INFO -- :   Rendered home/index.html.erb within layouts/application (0.1ms)
+I, [2018-05-11T10:39:26.407548 #26701]  INFO -- : Completed 200 OK in 89ms (Views: 0.6ms | ActiveRecord: 26.1ms)
+I, [2018-05-11T10:43:25.162720 #29599]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:43:25 +0700
+I, [2018-05-11T10:43:25.180195 #29599]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:43:25.189115 #29599] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:43:25.203381 #29599] DEBUG -- :   [1m[35mTemperature Load (7.8ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:43:25.230696 #29599]  INFO -- :   Rendered home/index.html.erb within layouts/application (0.6ms)
+I, [2018-05-11T10:43:25.231392 #29599]  INFO -- : Completed 200 OK in 51ms (Views: 3.5ms | ActiveRecord: 11.0ms)
+I, [2018-05-11T10:45:08.270341 #30841]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:45:08 +0700
+I, [2018-05-11T10:45:08.286894 #30841]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:45:08.294147 #30841] DEBUG -- :   [1m[36mTemperature Load (0.7ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:45:08.307195 #30841] DEBUG -- :   [1m[35mTemperature Load (7.0ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:45:08.333104 #30841]  INFO -- :   Rendered home/index.html.erb within layouts/application (0.6ms)
+I, [2018-05-11T10:45:08.333821 #30841]  INFO -- : Completed 200 OK in 47ms (Views: 3.6ms | ActiveRecord: 10.0ms)
+I, [2018-05-11T10:46:58.905045 #32124]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:46:58 +0700
+I, [2018-05-11T10:46:58.917827 #32124]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:46:58.922933 #32124] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:46:58.932048 #32124] DEBUG -- :   [1m[35mTemperature Load (5.1ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:46:58.966959 #32124]  INFO -- :   Rendered home/index.html.erb within layouts/application (9.2ms)
+I, [2018-05-11T10:46:58.967678 #32124]  INFO -- : Completed 200 OK in 50ms (Views: 12.1ms | ActiveRecord: 7.1ms)
+I, [2018-05-11T10:47:18.142531 #32434]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:47:18 +0700
+I, [2018-05-11T10:47:18.154164 #32434]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:47:18.159306 #32434] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:47:18.168622 #32434] DEBUG -- :   [1m[35mTemperature Load (5.2ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:47:18.213163 #32434]  INFO -- :   Rendered home/index.html.erb within layouts/application (18.0ms)
+I, [2018-05-11T10:47:18.213930 #32434]  INFO -- : Completed 200 OK in 60ms (Views: 20.9ms | ActiveRecord: 7.3ms)
+I, [2018-05-11T10:47:23.155263 #32434]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:47:23 +0700
+I, [2018-05-11T10:47:23.157365 #32434]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:47:23.159879 #32434] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:47:23.170201 #32434] DEBUG -- :   [1m[35mTemperature Load (9.4ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:47:23.214876 #32434]  INFO -- :   Rendered home/index.html.erb within layouts/application (16.7ms)
+I, [2018-05-11T10:47:23.215231 #32434]  INFO -- : Completed 200 OK in 58ms (Views: 17.3ms | ActiveRecord: 10.3ms)
+I, [2018-05-11T10:47:38.590264 #32742]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:47:38 +0700
+I, [2018-05-11T10:47:38.601804 #32742]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:47:38.606909 #32742] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:47:38.616245 #32742] DEBUG -- :   [1m[35mTemperature Load (5.2ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:47:38.655894 #32742]  INFO -- :   Rendered home/index.html.erb within layouts/application (11.9ms)
+I, [2018-05-11T10:47:38.656599 #32742]  INFO -- : Completed 200 OK in 55ms (Views: 14.7ms | ActiveRecord: 7.3ms)
+I, [2018-05-11T10:47:55.256946 #580]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:47:55 +0700
+I, [2018-05-11T10:47:55.272396 #580]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:47:55.279337 #580] DEBUG -- :   [1m[36mTemperature Load (0.6ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:47:55.292107 #580] DEBUG -- :   [1m[35mTemperature Load (7.1ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:47:55.333915 #580]  INFO -- :   Rendered home/index.html.erb within layouts/application (9.6ms)
+I, [2018-05-11T10:47:55.334630 #580]  INFO -- : Completed 200 OK in 62ms (Views: 12.5ms | ActiveRecord: 9.9ms)
+I, [2018-05-11T10:50:11.656100 #2244]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:50:11 +0700
+I, [2018-05-11T10:50:11.667807 #2244]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:50:11.672963 #2244] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:50:11.682276 #2244] DEBUG -- :   [1m[35mTemperature Load (5.1ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:50:11.759329 #2244]  INFO -- :   Rendered home/index.html.erb within layouts/application (50.9ms)
+I, [2018-05-11T10:50:11.760114 #2244]  INFO -- : Completed 200 OK in 92ms (Views: 53.9ms | ActiveRecord: 7.2ms)
+I, [2018-05-11T10:51:01.252387 #2879]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:51:01 +0700
+I, [2018-05-11T10:51:01.263993 #2879]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:51:01.269200 #2879] DEBUG -- :   [1m[36mTemperature Load (0.6ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:51:01.278419 #2879] DEBUG -- :   [1m[35mTemperature Load (5.1ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:51:01.354423 #2879]  INFO -- :   Rendered home/index.html.erb within layouts/application (50.1ms)
+I, [2018-05-11T10:51:01.355189 #2879]  INFO -- : Completed 200 OK in 91ms (Views: 53.1ms | ActiveRecord: 7.2ms)
+I, [2018-05-11T10:53:26.197353 #4527]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:53:26 +0700
+I, [2018-05-11T10:53:26.208919 #4527]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:53:26.213996 #4527] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:53:26.223559 #4527] DEBUG -- :   [1m[35mTemperature Load (5.4ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:53:26.301609 #4527]  INFO -- :   Rendered home/index.html.erb within layouts/application (50.4ms)
+I, [2018-05-11T10:53:26.302379 #4527]  INFO -- : Completed 200 OK in 93ms (Views: 53.4ms | ActiveRecord: 7.5ms)
+I, [2018-05-11T10:53:42.930750 #4794]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:53:42 +0700
+I, [2018-05-11T10:53:42.942382 #4794]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:53:42.947483 #4794] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:53:42.956901 #4794] DEBUG -- :   [1m[35mTemperature Load (5.3ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:53:43.035839 #4794]  INFO -- :   Rendered home/index.html.erb within layouts/application (53.0ms)
+I, [2018-05-11T10:53:43.036632 #4794]  INFO -- : Completed 200 OK in 94ms (Views: 55.9ms | ActiveRecord: 7.4ms)
+I, [2018-05-11T10:53:57.414200 #5051]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:53:57 +0700
+I, [2018-05-11T10:53:57.431045 #5051]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:53:57.437606 #5051] DEBUG -- :   [1m[36mTemperature Load (0.6ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:53:57.448107 #5051] DEBUG -- :   [1m[35mTemperature Load (5.9ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:53:57.524448 #5051]  INFO -- :   Rendered home/index.html.erb within layouts/application (50.3ms)
+I, [2018-05-11T10:53:57.525234 #5051]  INFO -- : Completed 200 OK in 94ms (Views: 53.2ms | ActiveRecord: 8.2ms)
+I, [2018-05-11T10:54:42.736660 #5635]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:54:42 +0700
+I, [2018-05-11T10:54:42.755048 #5635]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:54:42.761450 #5635] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:54:42.770861 #5635] DEBUG -- :   [1m[35mTemperature Load (5.2ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:54:42.849387 #5635]  INFO -- :   Rendered home/index.html.erb within layouts/application (51.9ms)
+I, [2018-05-11T10:54:42.850159 #5635]  INFO -- : Completed 200 OK in 95ms (Views: 54.9ms | ActiveRecord: 7.3ms)
+I, [2018-05-11T10:54:54.355604 #5859]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:54:54 +0700
+I, [2018-05-11T10:54:54.372594 #5859]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:54:54.380330 #5859] DEBUG -- :   [1m[36mTemperature Load (0.7ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:54:54.394981 #5859] DEBUG -- :   [1m[35mTemperature Load (8.3ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:54:54.472256 #5859]  INFO -- :   Rendered home/index.html.erb within layouts/application (49.9ms)
+I, [2018-05-11T10:54:54.473025 #5859]  INFO -- : Completed 200 OK in 100ms (Views: 52.8ms | ActiveRecord: 11.3ms)
+I, [2018-05-11T10:55:07.418303 #6109]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:55:07 +0700
+I, [2018-05-11T10:55:07.429787 #6109]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:55:07.434905 #6109] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:55:07.444126 #6109] DEBUG -- :   [1m[35mTemperature Load (5.1ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:55:07.522096 #6109]  INFO -- :   Rendered home/index.html.erb within layouts/application (51.2ms)
+I, [2018-05-11T10:55:07.522904 #6109]  INFO -- : Completed 200 OK in 93ms (Views: 54.2ms | ActiveRecord: 7.2ms)
+I, [2018-05-11T10:55:41.614946 #6564]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:55:41 +0700
+I, [2018-05-11T10:55:41.632597 #6564]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:55:41.640532 #6564] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:55:41.654663 #6564] DEBUG -- :   [1m[35mTemperature Load (7.5ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:55:41.731035 #6564]  INFO -- :   Rendered home/index.html.erb within layouts/application (50.8ms)
+I, [2018-05-11T10:55:41.731835 #6564]  INFO -- : Completed 200 OK in 99ms (Views: 53.8ms | ActiveRecord: 10.7ms)
+I, [2018-05-11T10:57:01.435909 #7522]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:57:01 +0700
+I, [2018-05-11T10:57:01.447397 #7522]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:57:01.452497 #7522] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:57:01.462558 #7522] DEBUG -- :   [1m[35mTemperature Load (5.8ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:57:01.542853 #7522]  INFO -- :   Rendered home/index.html.erb within layouts/application (50.4ms)
+I, [2018-05-11T10:57:01.543635 #7522]  INFO -- : Completed 200 OK in 96ms (Views: 53.4ms | ActiveRecord: 7.9ms)
+I, [2018-05-11T10:57:32.003458 #7937]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:57:32 +0700
+I, [2018-05-11T10:57:32.022368 #7937]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:57:32.030608 #7937] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:57:32.046256 #7937] DEBUG -- :   [1m[35mTemperature Load (8.9ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:57:32.131172 #7937]  INFO -- :   Rendered home/index.html.erb within layouts/application (49.9ms)
+I, [2018-05-11T10:57:32.131949 #7937]  INFO -- : Completed 200 OK in 109ms (Views: 52.8ms | ActiveRecord: 12.2ms)
+I, [2018-05-11T10:57:41.802230 #8144]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:57:41 +0700
+I, [2018-05-11T10:57:41.813795 #8144]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:57:41.818952 #8144] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:57:41.828345 #8144] DEBUG -- :   [1m[35mTemperature Load (5.2ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:57:41.905736 #8144]  INFO -- :   Rendered home/index.html.erb within layouts/application (50.7ms)
+I, [2018-05-11T10:57:41.906512 #8144]  INFO -- : Completed 200 OK in 93ms (Views: 53.8ms | ActiveRecord: 7.3ms)
+I, [2018-05-11T10:58:14.540063 #8605]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:58:14 +0700
+I, [2018-05-11T10:58:14.551556 #8605]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:58:14.556621 #8605] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:58:14.565867 #8605] DEBUG -- :   [1m[35mTemperature Load (5.1ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:58:14.642706 #8605]  INFO -- :   Rendered home/index.html.erb within layouts/application (50.8ms)
+I, [2018-05-11T10:58:14.643518 #8605]  INFO -- : Completed 200 OK in 92ms (Views: 53.7ms | ActiveRecord: 7.2ms)
+I, [2018-05-11T10:58:34.548307 #8913]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:58:34 +0700
+I, [2018-05-11T10:58:34.566021 #8913]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:58:34.573919 #8913] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:58:34.588921 #8913] DEBUG -- :   [1m[35mTemperature Load (8.5ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:58:34.673302 #8913]  INFO -- :   Rendered home/index.html.erb within layouts/application (50.3ms)
+I, [2018-05-11T10:58:34.674074 #8913]  INFO -- : Completed 200 OK in 108ms (Views: 53.2ms | ActiveRecord: 11.7ms)
+I, [2018-05-11T10:59:26.218871 #9568]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 10:59:26 +0700
+I, [2018-05-11T10:59:26.230500 #9568]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T10:59:26.235589 #9568] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T10:59:26.244796 #9568] DEBUG -- :   [1m[35mTemperature Load (5.1ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T10:59:26.325937 #9568]  INFO -- :   Rendered home/index.html.erb within layouts/application (54.4ms)
+I, [2018-05-11T10:59:26.326723 #9568]  INFO -- : Completed 200 OK in 96ms (Views: 57.4ms | ActiveRecord: 7.2ms)
+I, [2018-05-11T11:00:46.698870 #10564]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:00:46 +0700
+I, [2018-05-11T11:00:46.716489 #10564]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:00:46.724636 #10564] DEBUG -- :   [1m[36mTemperature Load (0.7ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:00:46.738495 #10564] DEBUG -- :   [1m[35mTemperature Load (7.7ms)[0m  SELECT "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:00:46.819492 #10564]  INFO -- :   Rendered home/index.html.erb within layouts/application (53.9ms)
+I, [2018-05-11T11:00:46.820334 #10564]  INFO -- : Completed 200 OK in 104ms (Views: 57.0ms | ActiveRecord: 10.8ms)
+I, [2018-05-11T11:02:39.884056 #11868]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:02:39 +0700
+I, [2018-05-11T11:02:39.901837 #11868]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:02:39.909705 #11868] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:02:39.921321 #11868] DEBUG -- :   [1m[35mTemperature Load (5.0ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:02:39.990721 #11868]  INFO -- :   Rendered home/index.html.erb within layouts/application (49.6ms)
+I, [2018-05-11T11:02:39.991512 #11868]  INFO -- : Completed 200 OK in 90ms (Views: 52.7ms | ActiveRecord: 8.3ms)
+I, [2018-05-11T11:03:57.648388 #11868]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:03:57 +0700
+I, [2018-05-11T11:03:57.656482 #11868]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:03:57.657260 #11868] DEBUG -- :   [1m[36mTemperature Load (0.3ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:03:57.660651 #11868] DEBUG -- :   [1m[35mTemperature Load (3.2ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:03:57.725542 #11868]  INFO -- :   Rendered home/index.html.erb within layouts/application (53.3ms)
+I, [2018-05-11T11:03:57.725885 #11868]  INFO -- : Completed 200 OK in 69ms (Views: 53.8ms | ActiveRecord: 3.4ms)
+I, [2018-05-11T11:04:01.240056 #11868]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:04:01 +0700
+I, [2018-05-11T11:04:01.241388 #11868]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:04:01.243141 #11868] DEBUG -- :   [1m[36mTemperature Load (0.6ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:04:01.258883 #11868] DEBUG -- :   [1m[35mTemperature Load (14.8ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:04:01.354927 #11868]  INFO -- :   Rendered home/index.html.erb within layouts/application (53.5ms)
+I, [2018-05-11T11:04:01.355289 #11868]  INFO -- : Completed 200 OK in 114ms (Views: 54.0ms | ActiveRecord: 15.4ms)
+I, [2018-05-11T11:04:35.184579 #13212]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:04:35 +0700
+I, [2018-05-11T11:04:35.203221 #13212]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:04:35.211407 #13212] DEBUG -- :   [1m[36mTemperature Load (0.7ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:04:35.222844 #13212] DEBUG -- :   [1m[35mTemperature Load (4.5ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:04:35.290212 #13212]  INFO -- :   Rendered home/index.html.erb within layouts/application (49.2ms)
+I, [2018-05-11T11:04:35.291016 #13212]  INFO -- : Completed 200 OK in 88ms (Views: 52.1ms | ActiveRecord: 7.8ms)
+I, [2018-05-11T11:04:37.221509 #13212]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:04:37 +0700
+I, [2018-05-11T11:04:37.222381 #13212]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:04:37.223399 #13212] DEBUG -- :   [1m[36mTemperature Load (0.4ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:04:37.229769 #13212] DEBUG -- :   [1m[35mTemperature Load (5.9ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:04:37.298576 #13212]  INFO -- :   Rendered home/index.html.erb within layouts/application (53.0ms)
+I, [2018-05-11T11:04:37.298950 #13212]  INFO -- : Completed 200 OK in 76ms (Views: 53.5ms | ActiveRecord: 6.3ms)
+I, [2018-05-11T11:04:39.489986 #13212]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:04:39 +0700
+I, [2018-05-11T11:04:39.491799 #13212]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:04:39.494082 #13212] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:04:39.502498 #13212] DEBUG -- :   [1m[35mTemperature Load (7.5ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:04:39.559814 #13212]  INFO -- :   Rendered home/index.html.erb within layouts/application (46.1ms)
+I, [2018-05-11T11:04:39.560171 #13212]  INFO -- : Completed 200 OK in 68ms (Views: 46.6ms | ActiveRecord: 8.3ms)
+I, [2018-05-11T11:05:45.292171 #14071]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:05:45 +0700
+I, [2018-05-11T11:05:45.303711 #14071]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:05:45.308853 #14071] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:05:45.316182 #14071] DEBUG -- :   [1m[35mTemperature Load (3.1ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:05:45.380038 #14071]  INFO -- :   Rendered home/index.html.erb within layouts/application (49.1ms)
+I, [2018-05-11T11:05:45.380835 #14071]  INFO -- : Completed 200 OK in 77ms (Views: 52.0ms | ActiveRecord: 5.2ms)
+I, [2018-05-11T11:05:51.122699 #14071]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:05:51 +0700
+I, [2018-05-11T11:05:51.124676 #14071]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:05:51.127152 #14071] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:05:51.135464 #14071] DEBUG -- :   [1m[35mTemperature Load (7.3ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:05:51.203119 #14071]  INFO -- :   Rendered home/index.html.erb within layouts/application (52.8ms)
+I, [2018-05-11T11:05:51.203467 #14071]  INFO -- : Completed 200 OK in 79ms (Views: 53.3ms | ActiveRecord: 8.2ms)
+I, [2018-05-11T11:05:56.775262 #14071]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:05:56 +0700
+I, [2018-05-11T11:05:56.775839 #14071]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:05:56.776467 #14071] DEBUG -- :   [1m[36mTemperature Load (0.2ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:05:56.782410 #14071] DEBUG -- :   [1m[35mTemperature Load (5.7ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:05:56.840784 #14071]  INFO -- :   Rendered home/index.html.erb within layouts/application (47.4ms)
+I, [2018-05-11T11:05:56.841154 #14071]  INFO -- : Completed 200 OK in 65ms (Views: 47.9ms | ActiveRecord: 5.9ms)
+I, [2018-05-11T11:06:02.419629 #14071]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:06:02 +0700
+I, [2018-05-11T11:06:02.421417 #14071]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:06:02.423662 #14071] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:06:02.432367 #14071] DEBUG -- :   [1m[35mTemperature Load (7.8ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:06:02.494754 #14071]  INFO -- :   Rendered home/index.html.erb within layouts/application (51.1ms)
+I, [2018-05-11T11:06:02.495151 #14071]  INFO -- : Completed 200 OK in 74ms (Views: 51.6ms | ActiveRecord: 8.6ms)
+I, [2018-05-11T11:06:07.367644 #14409]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:06:07 +0700
+I, [2018-05-11T11:06:07.385498 #14409]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:06:07.393382 #14409] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:06:07.405168 #14409] DEBUG -- :   [1m[35mTemperature Load (5.1ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:06:07.478456 #14409]  INFO -- :   Rendered home/index.html.erb within layouts/application (51.1ms)
+I, [2018-05-11T11:06:07.479294 #14409]  INFO -- : Completed 200 OK in 94ms (Views: 54.5ms | ActiveRecord: 8.3ms)
+I, [2018-05-11T11:06:18.042193 #14409]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:06:18 +0700
+I, [2018-05-11T11:06:18.042806 #14409]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:06:18.043478 #14409] DEBUG -- :   [1m[36mTemperature Load (0.2ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:06:18.046814 #14409] DEBUG -- :   [1m[35mTemperature Load (3.1ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:06:18.115840 #14409]  INFO -- :   Rendered home/index.html.erb within layouts/application (54.0ms)
+I, [2018-05-11T11:06:18.116198 #14409]  INFO -- : Completed 200 OK in 73ms (Views: 54.5ms | ActiveRecord: 3.3ms)
+I, [2018-05-11T11:06:28.728180 #14409]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:06:28 +0700
+I, [2018-05-11T11:06:28.729972 #14409]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:06:28.732319 #14409] DEBUG -- :   [1m[36mTemperature Load (0.9ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:06:28.741304 #14409] DEBUG -- :   [1m[35mTemperature Load (8.1ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:06:28.799493 #14409]  INFO -- :   Rendered home/index.html.erb within layouts/application (47.4ms)
+I, [2018-05-11T11:06:28.799857 #14409]  INFO -- : Completed 200 OK in 70ms (Views: 47.8ms | ActiveRecord: 9.0ms)
+I, [2018-05-11T11:06:39.455441 #14409]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:06:39 +0700
+I, [2018-05-11T11:06:39.457257 #14409]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:06:39.459586 #14409] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:06:39.468337 #14409] DEBUG -- :   [1m[35mTemperature Load (7.8ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:06:39.526622 #14409]  INFO -- :   Rendered home/index.html.erb within layouts/application (46.9ms)
+I, [2018-05-11T11:06:39.526980 #14409]  INFO -- : Completed 200 OK in 70ms (Views: 47.4ms | ActiveRecord: 8.7ms)
+I, [2018-05-11T11:06:50.765663 #14965]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:06:50 +0700
+I, [2018-05-11T11:06:50.783975 #14965]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:06:50.792383 #14965] DEBUG -- :   [1m[36mTemperature Load (0.7ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:06:50.804557 #14965] DEBUG -- :   [1m[35mTemperature Load (5.2ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:06:50.876492 #14965]  INFO -- :   Rendered home/index.html.erb within layouts/application (49.7ms)
+I, [2018-05-11T11:06:50.877309 #14965]  INFO -- : Completed 200 OK in 93ms (Views: 52.9ms | ActiveRecord: 8.6ms)
+I, [2018-05-11T11:07:21.507115 #14965]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:07:21 +0700
+I, [2018-05-11T11:07:21.509121 #14965]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:07:21.511598 #14965] DEBUG -- :   [1m[36mTemperature Load (0.9ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:07:21.520307 #14965] DEBUG -- :   [1m[35mTemperature Load (7.7ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:07:21.588557 #14965]  INFO -- :   Rendered home/index.html.erb within layouts/application (52.7ms)
+I, [2018-05-11T11:07:21.588911 #14965]  INFO -- : Completed 200 OK in 80ms (Views: 53.2ms | ActiveRecord: 8.6ms)
+I, [2018-05-11T11:07:52.288201 #14965]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:07:52 +0700
+I, [2018-05-11T11:07:52.288785 #14965]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:07:52.289450 #14965] DEBUG -- :   [1m[36mTemperature Load (0.2ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:07:52.292746 #14965] DEBUG -- :   [1m[35mTemperature Load (3.0ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:07:52.351456 #14965]  INFO -- :   Rendered home/index.html.erb within layouts/application (47.7ms)
+I, [2018-05-11T11:07:52.351829 #14965]  INFO -- : Completed 200 OK in 63ms (Views: 48.2ms | ActiveRecord: 3.3ms)
+I, [2018-05-11T11:08:23.309730 #14965]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:08:23 +0700
+I, [2018-05-11T11:08:23.311515 #14965]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:08:23.313858 #14965] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:08:23.330347 #14965] DEBUG -- :   [1m[35mTemperature Load (15.4ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:08:23.425365 #14965]  INFO -- :   Rendered home/index.html.erb within layouts/application (52.9ms)
+I, [2018-05-11T11:08:23.425726 #14965]  INFO -- : Completed 200 OK in 114ms (Views: 53.5ms | ActiveRecord: 16.3ms)
+I, [2018-05-11T11:08:24.840929 #14965]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:08:24 +0700
+I, [2018-05-11T11:08:24.842777 #14965]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:08:24.845067 #14965] DEBUG -- :   [1m[36mTemperature Load (0.9ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:08:24.853474 #14965] DEBUG -- :   [1m[35mTemperature Load (7.5ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:08:24.916956 #14965]  INFO -- :   Rendered home/index.html.erb within layouts/application (49.0ms)
+I, [2018-05-11T11:08:24.917310 #14965]  INFO -- : Completed 200 OK in 74ms (Views: 49.4ms | ActiveRecord: 8.3ms)
+I, [2018-05-11T11:08:27.357334 #14965]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:08:27 +0700
+I, [2018-05-11T11:08:27.359146 #14965]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:08:27.361469 #14965] DEBUG -- :   [1m[36mTemperature Load (0.9ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:08:27.377902 #14965] DEBUG -- :   [1m[35mTemperature Load (15.4ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:08:27.475082 #14965]  INFO -- :   Rendered home/index.html.erb within layouts/application (53.4ms)
+I, [2018-05-11T11:08:27.475453 #14965]  INFO -- : Completed 200 OK in 116ms (Views: 54.0ms | ActiveRecord: 16.3ms)
+I, [2018-05-11T11:08:30.928128 #14965]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:08:30 +0700
+I, [2018-05-11T11:08:30.929949 #14965]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:08:30.932208 #14965] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:08:30.941163 #14965] DEBUG -- :   [1m[35mTemperature Load (8.0ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:08:31.002969 #14965]  INFO -- :   Rendered home/index.html.erb within layouts/application (51.0ms)
+I, [2018-05-11T11:08:31.003321 #14965]  INFO -- : Completed 200 OK in 73ms (Views: 51.5ms | ActiveRecord: 8.9ms)
+I, [2018-05-11T11:08:36.155451 #16197]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:08:36 +0700
+I, [2018-05-11T11:08:36.167234 #16197]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:08:36.172342 #16197] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:08:36.179714 #16197] DEBUG -- :   [1m[35mTemperature Load (3.1ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:08:36.247497 #16197]  INFO -- :   Rendered home/index.html.erb within layouts/application (11.2ms)
+I, [2018-05-11T11:08:36.248260 #16197]  INFO -- : Completed 200 OK in 81ms (Views: 14.1ms | ActiveRecord: 5.3ms)
+I, [2018-05-11T11:09:00.681872 #16551]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:09:00 +0700
+I, [2018-05-11T11:09:00.693380 #16551]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:09:00.698460 #16551] DEBUG -- :   [1m[36mTemperature Load (0.5ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:09:00.705819 #16551] DEBUG -- :   [1m[35mTemperature Load (3.1ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:09:00.769699 #16551]  INFO -- :   Rendered home/index.html.erb within layouts/application (11.2ms)
+I, [2018-05-11T11:09:00.770457 #16551]  INFO -- : Completed 200 OK in 77ms (Views: 14.0ms | ActiveRecord: 5.2ms)
+I, [2018-05-11T11:09:31.727046 #16551]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:09:31 +0700
+I, [2018-05-11T11:09:31.729156 #16551]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:09:31.731686 #16551] DEBUG -- :   [1m[36mTemperature Load (0.9ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:09:31.740262 #16551] DEBUG -- :   [1m[35mTemperature Load (7.6ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:09:31.808836 #16551]  INFO -- :   Rendered home/index.html.erb within layouts/application (10.4ms)
+I, [2018-05-11T11:09:31.809167 #16551]  INFO -- : Completed 200 OK in 80ms (Views: 10.9ms | ActiveRecord: 8.5ms)
+I, [2018-05-11T11:10:02.634215 #16551]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:10:02 +0700
+I, [2018-05-11T11:10:02.635951 #16551]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:10:02.638309 #16551] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:10:02.647079 #16551] DEBUG -- :   [1m[35mTemperature Load (7.8ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:10:02.704621 #16551]  INFO -- :   Rendered home/index.html.erb within layouts/application (10.1ms)
+I, [2018-05-11T11:10:02.704968 #16551]  INFO -- : Completed 200 OK in 69ms (Views: 10.6ms | ActiveRecord: 8.7ms)
+I, [2018-05-11T11:10:33.641012 #16551]  INFO -- : Started GET "/" for 10.20.30.1 at 2018-05-11 11:10:33 +0700
+I, [2018-05-11T11:10:33.642842 #16551]  INFO -- : Processing by HomeController#index as HTML
+D, [2018-05-11T11:10:33.645100 #16551] DEBUG -- :   [1m[36mTemperature Load (0.8ms)[0m  [1mSELECT  "temperatures".* FROM "temperatures"  ORDER BY "temperatures"."measure_time" DESC LIMIT 1[0m
+D, [2018-05-11T11:10:33.654118 #16551] DEBUG -- :   [1m[35mTemperature Load (8.1ms)[0m  SELECT "temperatures".* FROM "temperatures" WHERE (( id % 2 ) = 0)  ORDER BY "temperatures"."measure_time" ASC
+I, [2018-05-11T11:10:33.711984 #16551]  INFO -- :   Rendered home/index.html.erb within layouts/application (10.0ms)
+I, [2018-05-11T11:10:33.712325 #16551]  INFO -- : Completed 200 OK in 69ms (Views: 10.5ms | ActiveRecord: 9.0ms)

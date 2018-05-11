@@ -40,6 +40,7 @@ GEM
       debug_inspector (>= 0.0.1)
     builder (3.2.3)
     byebug (10.0.2)
+    c3-rails (0.4.18)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.1.x)
@@ -49,12 +50,16 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     crass (1.0.4)
+    d3-rails (3.5.17)
+      railties (>= 3.1)
     debug_inspector (0.0.3)
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.23)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    gruff (0.7.0)
+      rmagick (~> 2.13, >= 2.13.4)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     jbuilder (2.7.0)
@@ -109,6 +114,7 @@ GEM
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     rdoc (4.3.0)
+    rmagick (2.16.0)
     sass (3.5.6)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -153,7 +159,10 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  c3-rails
   coffee-rails (~> 4.1.0)
+  d3-rails (= 3.5.17)
+  gruff
   jbuilder (~> 2.0)
   jquery-rails
   pg (= 0.21)
@@ -166,4 +175,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.15.4
+   1.16.1

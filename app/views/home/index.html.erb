@@ -2,3 +2,96 @@ In temp: <%= @temperature_last.in_temp %><br/>
 Out temp: <%= @temperature_last.out_temp %><br/>
 Fan speed: <%= @temperature_last.fan_speed %><br/>
 Measure time: <%= @temperature_last.measure_time %><br/>
+
+<div id="temperature">
+</div>
+
+<div id="fan_speed">
+</div>
+<script>
+    var chart = c3.generate({
+        bindto: '#temperature',
+        size: {
+            height: 440
+        },
+        data: {
+            columns: [
+                ['In temp', <%= @temperatures.map(&:in_temp).join(', ') %>],
+                ['Out temp', <%= @temperatures.map(&:out_temp).join(', ') %>],
+            ]
+        },
+        grid: {
+            x: {
+                show: true
+            },
+            y: {
+                show: true
+            }
+        },
+        zoom: {
+            enabled: true,
+            rescale: true,
+            extent: [1, 50]
+        },
+        axis: {
+            rotated: false,
+            x: {
+                type: 'category',
+                categories: <%= raw @labels %>,
+                tick: {
+                    rotate: 75,
+                    multiline: false,
+                    count: 20
+                }
+            }
+        }
+    });
+</script>
+
+
+<script>
+    var chart = c3.generate({
+        bindto: '#fan_speed',
+        size: {
+            height: 440
+        },
+        data: {
+            columns: [
+                ['Fan speed', <%= @temperatures.map(&:fan_speed).join(', ') %>]
+            ]
+        },
+        grid: {
+            x: {
+                show: true
+            },
+            y: {
+                show: true
+            }
+        },
+        zoom: {
+            enabled: true,
+            rescale: true,
+            extent: [1, 50]
+        },
+        axis: {
+            rotated: false,
+            x: {
+                type: 'category',
+                categories: <%= raw @labels %>,
+                tick: {
+                    rotate: 75,
+                    multiline: false,
+                    count: 20
+                }
+            }
+        }
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        setInterval(function () {
+            window.location.reload(1);
+        }, 30000);
+    });
+</script>
