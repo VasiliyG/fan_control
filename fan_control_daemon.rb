@@ -5,6 +5,7 @@ TEMP_SENSORS_PIN = 2
 IN_TEMP = '000009e91fbe'.freeze
 TEMP_ARRAY = (220 .. 310).to_a.map { |i| i.to_f / 10 }
 FAN_SPEED_ARRAY = (100 .. 255).to_a
+MAX_ERRORS_COUNT = 10
 
 ActiveRecord::Base.establish_connection(
   adapter:  'postgresql',
@@ -48,6 +49,8 @@ end
 def fan_speed_array(temp)
   FAN_SPEED_ARRAY[(FAN_SPEED_ARRAY.size * (TEMP_ARRAY.index(temp.round(1)).to_f / TEMP_ARRAY.size)).round]
 end
+
+errors_count = 0
 
 while true
   begin
@@ -116,7 +119,12 @@ while true
     log_file << "We have get error: #{error}; Sleep 5 second and try connect again"
     log_file << "\n"
     log_file.close
+    errors_count += 1
     sleep 5
-    next
+    if errors_count > MAX_ERRORS_COUNT
+      break
+    else
+      next
+    end
   end
 end

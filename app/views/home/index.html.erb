@@ -1,15 +1,24 @@
 <div class="panel panel-default">
-  <div class="panel-heading">Current temp</div>
+  <div class="panel-heading">
+    Current temp
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target=".bs-filters-modal">Filters
+    </button>
+  </div>
   <div class="panel-body">
     In temp: <span class="label label-default"> <%= @temperature_last.in_temp %></span>
     Out temp: <span class="label label-default"> <%= @temperature_last.out_temp %></span>
     Fan speed: <span class="label label-default"> <%= @temperature_last.fan_speed %></span>
-    Measure time: <span class="label label-default"> <%= @temperature_last.measure_time.strftime('%d-%m-%Y %H:%M') %></span>
+    Measure time:
+    <span class="label label-default"> <%= @temperature_last.measure_time.strftime('%d-%m-%Y %H:%M') %></span>
   </div>
 </div>
 
 <div class="panel panel-default">
-  <div class="panel-heading">Temperature</div>
+  <div class="panel-heading">
+    Temperature
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target=".bs-filters-modal">Filters
+    </button>
+  </div>
   <div class="panel-body">
     <div id="temperature">
     </div>
@@ -17,18 +26,92 @@
 </div>
 
 <div class="panel panel-default">
-  <div class="panel-heading">Fan speed</div>
+  <div class="panel-heading">
+    Fan speed
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target=".bs-filters-modal">Filters
+    </button>
+  </div>
   <div class="panel-body">
     <div id="fan_speed">
     </div>
   </div>
 </div>
 
+<div class="modal fade bs-filters-modal" tabindex="-1" role="dialog" aria-labelledby="FiltersLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Filters</h4>
+      </div>
+      <div class="modal-body">
+        <%= form_tag root_path, method: :get do |_| %>
+          <div class='col-md-5'>
+            <div class="form-group">
+              <label for="datetime_from">Measure time from</label>
+              <div class='input-group date' id='datetimepicker6'>
+                <%= text_field_tag 'datetime_from', params[:datetime_from], class: 'form-control', id: 'datetime_from' %>
+                <span class="input-group-addon">
+                <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-5'>
+            <div class="form-group">
+              <label for="datetime_to">Measure time to</label>
+              <div class='input-group date' id='datetimepicker7'>
+                <%= text_field_tag 'datetime_to', params[:datetime_to], class: 'form-control', id: 'datetime_to' %>
+                <span class="input-group-addon">
+                <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-10">
+              <div class="checkbox">
+                <label>
+                  <%= check_box_tag 'only_even_ids', 'on', params[:only_even_ids] == 'on' %>
+                  Only even ids measures
+                </label>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-default">Apply filters</button>
+        <% end %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker6').datetimepicker({
+            locale: 'ru'
+        });
+        $('#datetimepicker7').datetimepicker({
+            useCurrent: false, //Important! See issue #1075
+            locale: 'ru'
+        });
+        $("#datetimepicker6").on("dp.change", function (e) {
+            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+        });
+        $("#datetimepicker7").on("dp.change", function (e) {
+            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+        });
+    });
+</script>
+
 <script>
     var chart = c3.generate({
         bindto: '#temperature',
         size: {
-            height: 380
+            height: 320
         },
         data: {
             columns: [
@@ -68,7 +151,7 @@
     var chart = c3.generate({
         bindto: '#fan_speed',
         size: {
-            height: 380
+            height: 280
         },
         data: {
             columns: [

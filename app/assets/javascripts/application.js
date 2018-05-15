@@ -17,3 +17,6 @@
 //= require c3
 //= require d3
 //= require bootstrap-sprockets
+//= require moment
+//= require moment/ru
+//= require bootstrap-datetimepicker
