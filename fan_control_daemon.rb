@@ -3,9 +3,13 @@ require 'active_record'
 
 TEMP_SENSORS_PIN = 2
 IN_TEMP = '000009e91fbe'.freeze
-TEMP_ARRAY = (220 .. 310).to_a.map { |i| i.to_f / 10 }
-FAN_SPEED_ARRAY = (100 .. 255).to_a
+TEMP_ARRAY = (220..310).to_a.map { |i| i.to_f / 10 }
+FAN_SPEED_ARRAY = (100..255).to_a
 MAX_ERRORS_COUNT = 10
+CORRECT_FAN_SPEED_ARRAY = (0..70).to_a
+CORRECT_TEMP_ARRAY = (100..250).to_a.map { |i| i.to_f / 10 }
+MAX_FAN_SPEED = FAN_SPEED_ARRAY.last
+MAX_CORRECT_FAN_SPEED = CORRECT_FAN_SPEED_ARRAY.last
 
 ActiveRecord::Base.establish_connection(
   adapter:  'postgresql',
@@ -50,6 +54,10 @@ def fan_speed_array(temp)
   FAN_SPEED_ARRAY[(FAN_SPEED_ARRAY.size * (TEMP_ARRAY.index(temp.round(1)).to_f / TEMP_ARRAY.size)).round]
 end
 
+def correct_for_out_temp(out_temp)
+  CORRECT_FAN_SPEED_ARRAY[(CORRECT_FAN_SPEED_ARRAY.size * (CORRECT_TEMP_ARRAY.index(out_temp.round(1)).to_f / CORRECT_TEMP_ARRAY.size)).round]
+end
+
 errors_count = 0
 
 while true
@@ -92,21 +100,32 @@ while true
           in_temp = 0
           out_temp = 0
           fan_speed = 0
-          ds18b20s.map do |sensor|
+          ds18b20s.reverse.map do |sensor|
             read_data = sensor.read
             if IN_TEMP == sensor.serial_number
               if read_data[:celsius] > TEMP_ARRAY.first && read_data[:celsius] <= TEMP_ARRAY.last
                 fan_speed = fan_speed_array(read_data[:celsius])
               end
               if read_data[:celsius] > TEMP_ARRAY.last
-                fan_speed = 255
+                fan_speed = MAX_FAN_SPEED
               end
               in_temp = read_data[:celsius]
             else
+              if fan_speed.positive?
+                correct_fan_speed = if read_data[:celsius] > CORRECT_TEMP_ARRAY.first && read_data[:celsius] <= CORRECT_TEMP_ARRAY.last
+                                      correct_for_out_temp(read_data[:celsius])
+                                    elsif read_data[:celsius] > CORRECT_TEMP_ARRAY.last
+                                      MAX_CORRECT_FAN_SPEED
+                                    else
+                                      0
+                                    end
+                fan_speed += correct_fan_speed
+                fan_speed = MAX_FAN_SPEED if fan_speed > MAX_FAN_SPEED
+              end
               out_temp = read_data[:celsius]
             end
-            led.color = [fan_speed, 0, 0]
           end
+          led.color = [fan_speed, 0, 0]
           Temperature.create(measure_time: Time.at(Time.now.to_i + 25_200), in_temp: in_temp, out_temp: out_temp, fan_speed: fan_speed)
           sleep 15
         end
