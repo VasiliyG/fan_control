@@ -3,11 +3,11 @@ require 'active_record'
 
 TEMP_SENSORS_PIN = 2
 IN_TEMP = '000009e91fbe'.freeze
-TEMP_ARRAY = (230..360).to_a.map { |i| i.to_f / 10 }
-FAN_SPEED_ARRAY = (50..255).to_a
+TEMP_ARRAY = (240..390).to_a.map { |i| i.to_f / 10 }
+FAN_SPEED_ARRAY = (30..255).to_a
 MAX_ERRORS_COUNT = 5
-CORRECT_FAN_SPEED_ARRAY = (0..70).to_a
-CORRECT_TEMP_ARRAY = (100..270).to_a.map { |i| i.to_f / 10 }
+CORRECT_FAN_SPEED_ARRAY = (0..50).to_a
+CORRECT_TEMP_ARRAY = (150..300).to_a.map { |i| i.to_f / 10 }
 MAX_FAN_SPEED = FAN_SPEED_ARRAY.last
 MAX_CORRECT_FAN_SPEED = CORRECT_FAN_SPEED_ARRAY.last
 
