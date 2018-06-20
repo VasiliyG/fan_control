@@ -3,10 +3,10 @@ require 'active_record'
 
 TEMP_SENSORS_PIN = 2
 IN_TEMP = '000009e91fbe'.freeze
-TEMP_ARRAY = (240..390).to_a.map { |i| i.to_f / 10 }
-FAN_SPEED_ARRAY = (30..255).to_a
+TEMP_ARRAY = (240..410).to_a.map { |i| i.to_f / 10 }
+FAN_SPEED_ARRAY = (20..255).to_a
 MAX_ERRORS_COUNT = 5
-CORRECT_FAN_SPEED_ARRAY = (0..50).to_a
+CORRECT_FAN_SPEED_ARRAY = (0..35).to_a
 CORRECT_TEMP_ARRAY = (150..300).to_a.map { |i| i.to_f / 10 }
 MAX_FAN_SPEED = FAN_SPEED_ARRAY.last
 MAX_CORRECT_FAN_SPEED = CORRECT_FAN_SPEED_ARRAY.last
@@ -50,6 +50,49 @@ class Temperature < ActiveRecord::Base
 
 end
 
+class AverageFanSpeed
+  ARRAY_SIZE = 300
+  GROW_SPEED = 150
+  AVERAGE_GROW_SPEED = 60
+  attr_reader :fan_speed_array
+
+  def initialize(init_fan_speed = 0)
+    @fan_speed_array = [init_fan_speed] * ARRAY_SIZE
+  end
+
+  def average_fan_speed(fan_speed)
+    preview_average_fan_speed = calc_average_fan_speed
+    write_fan_speed_to_array(fan_speed)
+
+    if fan_speed.zero? || fan_speed > preview_average_fan_speed
+      fan_speed
+    else
+      calc_average_fan_speed
+    end
+  end
+
+  private
+
+  def write_fan_speed_to_array(fan_speed)
+    grow_speed = if fan_speed > @fan_speed_array.last
+                   GROW_SPEED
+                 elsif fan_speed > calc_average_fan_speed
+                   AVERAGE_GROW_SPEED
+                 else
+                   1
+                 end
+    grow_speed.times { push_fan_speed_to_array(fan_speed) }
+  end
+
+  def push_fan_speed_to_array(fan_speed)
+    @fan_speed_array = @fan_speed_array.drop(1).push(fan_speed)
+  end
+
+  def calc_average_fan_speed
+    @fan_speed_array.instance_eval { reduce(:+) / size.to_f }
+  end
+end
+
 def fan_speed_array(temp)
   FAN_SPEED_ARRAY[(FAN_SPEED_ARRAY.size * (TEMP_ARRAY.index(temp.round(1)).to_f / TEMP_ARRAY.size)).round]
 end
@@ -59,6 +102,7 @@ def correct_for_out_temp(out_temp)
 end
 
 errors_count = 0
+average_speed_class = AverageFanSpeed.new(0)
 
 while true
   begin
@@ -125,7 +169,7 @@ while true
               out_temp = read_data[:celsius]
             end
           end
-          led.color = [fan_speed, 0, 0]
+          led.color = [average_speed_class.average_fan_speed(fan_speed).to_i, 0, 0]
           Temperature.create(measure_time: Time.at(Time.now.to_i + 25_200), in_temp: in_temp, out_temp: out_temp, fan_speed: fan_speed)
           sleep 15
         end
