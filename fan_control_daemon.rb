@@ -51,7 +51,7 @@ class Temperature < ActiveRecord::Base
 end
 
 class AverageFanSpeed
-  ARRAY_SIZE = 300
+  ARRAY_SIZE = 900
   GROW_SPEED = 150
   AVERAGE_GROW_SPEED = 60
   attr_reader :fan_speed_array
@@ -74,7 +74,7 @@ class AverageFanSpeed
   private
 
   def write_fan_speed_to_array(fan_speed)
-    grow_speed = if fan_speed > @fan_speed_array.last
+    grow_speed = if fan_speed > @fan_speed_array.last && fan_speed > calc_average_fan_speed
                    GROW_SPEED
                  elsif fan_speed > calc_average_fan_speed
                    AVERAGE_GROW_SPEED
@@ -169,7 +169,8 @@ while true
               out_temp = read_data[:celsius]
             end
           end
-          led.color = [average_speed_class.average_fan_speed(fan_speed).to_i, 0, 0]
+          fan_speed = average_speed_class.average_fan_speed(fan_speed).to_i
+          led.color = [fan_speed, 0, 0]
           Temperature.create(measure_time: Time.at(Time.now.to_i + 25_200), in_temp: in_temp, out_temp: out_temp, fan_speed: fan_speed)
           sleep 15
         end
