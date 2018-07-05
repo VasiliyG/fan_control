@@ -1,5 +1,7 @@
-require 'dino'
 require 'active_record'
+require 'pp'
+require 'serialport'
+require 'yaml'
 
 TEMP_SENSORS_PIN = 2
 IN_TEMP = '000009e91fbe'.freeze
@@ -44,10 +46,56 @@ ActiveRecord::Schema.define do
   unless index_exists?('temperatures', ['fan_speed'], name: 'temperatures_fan_speed')
     add_index 'temperatures', ['fan_speed'], name: 'temperatures_fan_speed'
   end
+
+  unless column_exists?(:temperatures, :street_temp)
+    add_column :temperatures, :street_temp, :float
+  end
+
+  unless index_exists?('temperatures', ['street_temp'], name: 'temperatures_street_temp')
+    add_index 'temperatures', ['street_temp'], name: 'temperatures_street_temp'
+  end
 end
 
 class Temperature < ActiveRecord::Base
 
+end
+
+class FanControl
+
+  def initialize
+    baud_rate = 115200
+    parity = SerialPort::NONE
+    @fan_control=nil
+    @port=nil
+  end
+
+  def open(port)
+    @fan_control = SerialPort.new(port, @baud_rate)
+  end
+
+
+  def shutdown(reason)
+
+    return if @fan_control == nil
+    return if reason == :int
+
+    printf("\nshutting down serial (%s)\n", reason)
+
+    @fan_control.flush()
+    printf("done\n")
+  end
+
+  def read
+    @fan_control.readline
+  end
+
+  def write(fan_speed)
+    @fan_control.write(fan_speed)
+  end
+
+  def flush
+    @fan_control.flush
+  end
 end
 
 class AverageFanSpeed
@@ -106,80 +154,67 @@ average_speed_class = AverageFanSpeed.new(0)
 
 while true
   begin
-    board, bus, led, ds18b20s = Timeout::timeout(50) do
-      board = Dino::Board.new(Dino::TxRx::Serial.new)
-      bus = Dino::Components::OneWire::Bus.new(pin: TEMP_SENSORS_PIN, board: board)
-      led = Dino::Components::RGBLed.new(pins: {red: 11, green: 10, blue: 9}, board: board)
-      log_file = File.open('fan_control.log', 'ab')
-      if bus.parasite_power
-        log_file << "Parasite power detected...\n"
+    fan_control = Timeout::timeout(10) do
+      ports = Dir.glob("/dev/ttyUSB*")
+      if ports.size != 1
+        printf("did not found right /dev/ttyUSB* serial")
+        exit(1)
       end
 
-      if bus.device_present
-        log_file << "Devices present on bus...\n"
-      else
-        log_file << "No devices present on bus... Quitting...\n"
-        return
-      end
-
-      bus.search
-      count = bus.found_devices.count
-      log_file << "Found #{count} device#{'s' if count > 1} on the bus:\n"
-      log_file << bus.found_devices.inspect
-      log_file << "\n"
-
-      ds18b20s = []
-      bus.found_devices.each do |d|
-        if d[:class] == Dino::Components::OneWire::DS18B20
-          ds18b20s << d[:class].new(bus: bus, address: d[:address])
-        end
-      end
-      log_file.close
-      [board, bus, led, ds18b20s]
+      system("stty -F #{ports.first} 115200 -parenb -parodd cs8 -hupcl -cstopb cread clocal -crtscts -iuclc -ixany -imaxbel -iutf8 -opost -olcuc -ocrnl -onlcr -onocr -onlret -ofill -ofdel nl0 cr0 tab0 bs0 vt0 ff0 -isig -icanon -iexten -echo -echoe -echok -echonl -noflsh -xcase -tostop -echoprt -echoctl -echoke")
+      fan_control = FanControl.new()
+      fan_control.open(ports[0])
+      fan_control
     end
-    # Read the temp from each sensor in a simple loop.
+
+    need_save_temp = true
     loop do
       begin
         Timeout::timeout(50) do
-          in_temp = 0
-          out_temp = 0
-          fan_speed = 0
-          ds18b20s.reverse.map do |sensor|
-            read_data = sensor.read
-            if IN_TEMP == sensor.serial_number
-              if read_data[:celsius] > TEMP_ARRAY.first && read_data[:celsius] <= TEMP_ARRAY.last
-                fan_speed = fan_speed_array(read_data[:celsius])
-              end
-              if read_data[:celsius] > TEMP_ARRAY.last
-                fan_speed = MAX_FAN_SPEED
-              end
-              in_temp = read_data[:celsius]
-            else
-              if fan_speed.positive?
-                correct_fan_speed = if read_data[:celsius] > CORRECT_TEMP_ARRAY.first && read_data[:celsius] <= CORRECT_TEMP_ARRAY.last
-                                      correct_for_out_temp(read_data[:celsius])
-                                    elsif read_data[:celsius] > CORRECT_TEMP_ARRAY.last
-                                      MAX_CORRECT_FAN_SPEED
-                                    else
-                                      0
-                                    end
-                fan_speed += correct_fan_speed
-                fan_speed = MAX_FAN_SPEED if fan_speed > MAX_FAN_SPEED
-              end
-              out_temp = read_data[:celsius]
-            end
+
+          data_from_serial = YAML.load(fan_control.read.gsub("\r", '').gsub("\n", ''))
+
+          fan_speed_to_save = data_from_serial.first['fan_speed']
+          in_temp = data_from_serial.first['t_1_temp']
+          out_temp = data_from_serial.first['t_2_temp']
+
+          if need_save_temp
+            Temperature.create(measure_time: Time.at(Time.now.to_i + 25_200),
+                               in_temp: in_temp,
+                               out_temp: out_temp,
+                               fan_speed: fan_speed_to_save)
+            need_save_temp = false
+          else
+            need_save_temp = true
           end
-          fan_speed = average_speed_class.average_fan_speed(fan_speed).to_i
-          led.color = [fan_speed, 0, 0]
-          Temperature.create(measure_time: Time.at(Time.now.to_i + 25_200), in_temp: in_temp, out_temp: out_temp, fan_speed: fan_speed)
-          sleep 15
+
+          fan_speed = if in_temp > TEMP_ARRAY.first && in_temp <= TEMP_ARRAY.last
+                        fan_speed_array(in_temp)
+                      elsif in_temp > TEMP_ARRAY.last
+                        MAX_FAN_SPEED
+                      end
+
+          if fan_speed.positive?
+            correct_fan_speed = if out_temp > CORRECT_TEMP_ARRAY.first && out_temp <= CORRECT_TEMP_ARRAY.last
+                                  correct_for_out_temp(out_temp)
+                                elsif out_temp > CORRECT_TEMP_ARRAY.last
+                                  MAX_CORRECT_FAN_SPEED
+                                else
+                                  0
+                                end
+            fan_speed += correct_fan_speed
+            fan_speed = MAX_FAN_SPEED if fan_speed > MAX_FAN_SPEED
+          end
+
+          fan_control.write(average_speed_class.average_fan_speed(fan_speed).to_i)
+          sleep 4
         end
       rescue
         break
       end
     end
   rescue Exception => error
-    log_file = File.open('fan_control.log', 'ab')
+    log_file = File.open('auto_fan_control.log', 'ab')
     log_file << "We have get error: #{error}; Sleep 5 second and try connect again"
     log_file << "\n"
     log_file.close
