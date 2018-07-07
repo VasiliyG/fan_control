@@ -100,7 +100,7 @@ class FanControl
 end
 
 class AverageFanSpeed
-  ARRAY_SIZE = 450
+  ARRAY_SIZE = 700
   GROW_SPEED = 150
   AVERAGE_GROW_SPEED = 60
   attr_reader :fan_speed_array
@@ -179,7 +179,11 @@ while true
           street_temp = data_from_serial.first['t_3_temp']
           in_temp = data_from_serial.first['t_2_temp']
           out_temp = data_from_serial.first['t_1_temp']
-
+          if street_temp < -100 || street_temp == in_temp
+            street_temp = Temperature.order(:measure_time).last.try(:street_temp)
+          end
+          in_temp = Temperature.order(:measure_time).last.try(:in_temp) if in_temp < -100
+          out_temp = Temperature.order(:measure_time).last.try(:out_temp) if out_temp < -100
           if need_save_temp
             Temperature.create(measure_time: Time.at(Time.now.to_i + 25_200),
                                in_temp: in_temp,

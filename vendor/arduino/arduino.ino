@@ -25,8 +25,8 @@ int fan_pin = 11;
 int auto_mode_pin = 2;
 int ext_mode_pin = 3;
 
-int ext_mode_steps = 5;
-const int ext_max_steps = 5;
+int ext_mode_steps = 10;
+const int ext_max_steps = 10;
 
 float temp_1 = 0.0;
 float temp_2 = 0.0;
@@ -50,12 +50,13 @@ void loop() {
     ext_fan_speed = Serial.readString();
     ext_mode_steps = 0;
   }
-  delay(1000);
+  delay(800);
   temp_1 = sensors.getTempCByIndex(0);
-  delay(100);
+  delay(200);
   temp_2 = sensors.getTempCByIndex(1);
-  delay(100);
+  delay(200);
   temp_3 = sensors.getTempCByIndex(2);
+  delay(200);
   set_fan_speed();
 }
 
@@ -99,7 +100,6 @@ void send_data_to_serial() {
   out_string = "";
   out_string += "[{ 'fan_speed': ";
   out_string += fan_speed_for_write;
-
 
   sensors.requestTemperatures();
   out_string += ", 't_1_addr': ";
