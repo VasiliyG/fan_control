@@ -1,0 +1,72 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    Current temp
+  </div>
+  <div class="panel-body">
+
+    <div class="media">
+      <div class="media-left">
+        <a href="#">
+          <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Street temperature</h4>
+        <div class="progress">
+          <div class="progress-bar progress-bar-info" role="progressbar"
+               aria-valuenow="<%= @temperature_last.street_temp + 50 %>"
+               aria-valuemin="-50" aria-valuemax="50"
+               style="width: <%= @temperature_last.street_temp %>%">
+             <%= @temperature_last.street_temp %> &#8451;
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="media">
+      <div class="media-left">
+        <a href="#">
+          <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Out temperature</h4>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" role="progressbar"
+               aria-valuenow="<%= @temperature_last.out_temp + 50 %>"
+               aria-valuemin="-50" aria-valuemax="50"
+               style="width: <%= @temperature_last.out_temp %>%">
+            <%= @temperature_last.out_temp %> &#8451;
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="media">
+      <div class="media-left">
+        <a href="#">
+          <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">In temperature </h4>
+        <div class="progress">
+          <div class="progress-bar progress-bar-warning" role="progressbar"
+               aria-valuenow="<%= @temperature_last.in_temp + 50 %>"
+               aria-valuemin="-50" aria-valuemax="50"
+               style="width: <%= @temperature_last.in_temp %>%">
+            <%= @temperature_last.in_temp %> &#8451;
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        setInterval(function () {
+            window.location.reload(1);
+        }, 30000);
+    });
+</script>

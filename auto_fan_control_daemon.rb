@@ -2,6 +2,7 @@ require 'active_record'
 require 'pp'
 require 'serialport'
 require 'yaml'
+require 'timeout'
 
 TEMP_SENSORS_PIN = 2
 IN_TEMP = '000009e91fbe'.freeze
@@ -175,13 +176,15 @@ while true
           data_from_serial = YAML.load(fan_control.read.gsub("\r", '').gsub("\n", ''))
 
           fan_speed_to_save = data_from_serial.first['fan_speed']
-          in_temp = data_from_serial.first['t_1_temp']
-          out_temp = data_from_serial.first['t_2_temp']
+          street_temp = data_from_serial.first['t_3_temp']
+          in_temp = data_from_serial.first['t_2_temp']
+          out_temp = data_from_serial.first['t_1_temp']
 
           if need_save_temp
             Temperature.create(measure_time: Time.at(Time.now.to_i + 25_200),
                                in_temp: in_temp,
                                out_temp: out_temp,
+                               street_temp: street_temp,
                                fan_speed: fan_speed_to_save)
             need_save_temp = false
           else

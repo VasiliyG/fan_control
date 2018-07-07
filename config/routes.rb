@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'home#index'
+  get 'current_temperature' => 'home#current_temperature', as: :current_temperature
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

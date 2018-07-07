@@ -5,8 +5,9 @@
     </button>
   </div>
   <div class="panel-body">
-    In temp: <span class="label label-default"> <%= @temperature_last.in_temp %></span>
-    Out temp: <span class="label label-default"> <%= @temperature_last.out_temp %></span>
+    In temp: <span class="label label-default"> <%= @temperature_last.in_temp %> &#8451;</span>
+    Out temp: <span class="label label-default"> <%= @temperature_last.out_temp %> &#8451;</span>
+    Street temp: <span class="label label-default"> <%= @temperature_last.street_temp %> &#8451;</span>
     Fan speed: <span class="label label-default"> <%= @temperature_last.fan_speed %></span>
     Measure time:
     <span class="label label-default"> <%= @temperature_last.measure_time.strftime('%d-%m-%Y %H:%M') %></span>
@@ -115,8 +116,9 @@
         },
         data: {
             columns: [
-                ['In temp', <%= @temperatures.map(&:in_temp).join(', ') %>],
-                ['Out temp', <%= @temperatures.map(&:out_temp).join(', ') %>],
+                ['In temp', <%= @temperatures.map(&:in_temp).map{ |i| i.nil? ? 0 : i }.join(', ') %>],
+                ['Out temp', <%= @temperatures.map(&:out_temp).map{ |i| i.nil? ? 0 : i }.join(', ') %>],
+                ['Street temp', <%= @temperatures.map(&:street_temp).map{ |i| i.nil? ? 0 : i }.join(', ') %>]
             ]
         },
         grid: {

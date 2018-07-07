@@ -5,7 +5,7 @@
 #define ONE_WIRE_BUS 10
 OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensors(&oneWire);
-DeviceAddress insideThermometer, outsideThermometer;
+DeviceAddress insideThermometer, outsideThermometer, streetThermometer;
 
 String ext_fan_speed;
 
@@ -30,6 +30,7 @@ const int ext_max_steps = 5;
 
 float temp_1 = 0.0;
 float temp_2 = 0.0;
+float temp_3 = 0.0;
 
 void setup() {
   pinMode(auto_mode_pin, OUTPUT);
@@ -41,7 +42,7 @@ void setup() {
   sensors.begin();
   if (!sensors.getAddress(insideThermometer, 0)) Serial.println("Unable to find address for Device 0");
   if (!sensors.getAddress(outsideThermometer, 1)) Serial.println("Unable to find address for Device 1");
-
+  if (!sensors.getAddress(outsideThermometer, 2)) Serial.println("Unable to find address for Device 2");
 }
 
 void loop() {
@@ -49,14 +50,17 @@ void loop() {
     ext_fan_speed = Serial.readString();
     ext_mode_steps = 0;
   }
-  delay(500);
+  delay(1000);
   temp_1 = sensors.getTempCByIndex(0);
+  delay(100);
   temp_2 = sensors.getTempCByIndex(1);
+  delay(100);
+  temp_3 = sensors.getTempCByIndex(2);
   set_fan_speed();
 }
 
 void set_fan_speed() {
-  max_temp = (max(temp_1, temp_2) * 100);
+  max_temp = (max(max(temp_1, temp_2), temp_3) * 100);
 
   if (max_temp < (average(temp_values) + reduce_spline) && reduce_step < reduce_max) {
     reduce_step++;
@@ -106,6 +110,10 @@ void send_data_to_serial() {
   out_string += printAddress(outsideThermometer);
   out_string += ", 't_2_temp': ";
   out_string += temp_2;
+  out_string += ", 't_3_addr': ";
+  out_string += printAddress(streetThermometer);
+  out_string += ", 't_3_temp': ";
+  out_string += temp_3;
   out_string += " }]";
   Serial.println(out_string);
 }

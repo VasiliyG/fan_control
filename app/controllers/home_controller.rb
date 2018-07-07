@@ -15,4 +15,8 @@ class HomeController < ActionController::Base
     @temperatures = scope
     @labels = @temperatures.map{ |s| (s.measure_time.in_time_zone).strftime('%d-%m-%Y %H:%M') }.to_json
   end
+
+  def current_temperature
+    @temperature_last = Temperature.order(:measure_time).last
+  end
 end
