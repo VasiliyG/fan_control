@@ -50,13 +50,11 @@ void loop() {
     ext_fan_speed = Serial.readString();
     ext_mode_steps = 0;
   }
-  delay(800);
+  sensors.requestTemperatures();
+  delay(1100);
   temp_1 = sensors.getTempCByIndex(0);
-  delay(200);
   temp_2 = sensors.getTempCByIndex(1);
-  delay(200);
   temp_3 = sensors.getTempCByIndex(2);
-  delay(200);
   set_fan_speed();
 }
 
@@ -101,7 +99,6 @@ void send_data_to_serial() {
   out_string += "[{ 'fan_speed': ";
   out_string += fan_speed_for_write;
 
-  sensors.requestTemperatures();
   out_string += ", 't_1_addr': ";
   out_string += printAddress(insideThermometer);
   out_string += ", 't_1_temp': ";
