@@ -16,7 +16,7 @@
           <div class="progress-bar progress-bar-info" role="progressbar"
                aria-valuenow="<%= @temperature_last.street_temp + 50 %>"
                aria-valuemin="-50" aria-valuemax="50"
-               style="width: <%= @temperature_last.street_temp %>%">
+               style="width: <%= @temperature_last.street_temp + 50 %>%">
              <%= @temperature_last.street_temp %> &#8451;
           </div>
         </div>
@@ -35,7 +35,7 @@
           <div class="progress-bar progress-bar-success" role="progressbar"
                aria-valuenow="<%= @temperature_last.out_temp + 50 %>"
                aria-valuemin="-50" aria-valuemax="50"
-               style="width: <%= @temperature_last.out_temp %>%">
+               style="width: <%= @temperature_last.out_temp + 50 %>%">
             <%= @temperature_last.out_temp %> &#8451;
           </div>
         </div>
@@ -54,8 +54,27 @@
           <div class="progress-bar progress-bar-warning" role="progressbar"
                aria-valuenow="<%= @temperature_last.in_temp + 50 %>"
                aria-valuemin="-50" aria-valuemax="50"
-               style="width: <%= @temperature_last.in_temp %>%">
+               style="width: <%= @temperature_last.in_temp + 50 %>%">
             <%= @temperature_last.in_temp %> &#8451;
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="media">
+      <div class="media-left">
+        <a href="#">
+          <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">CPU temperature </h4>
+        <div class="progress">
+          <div class="progress-bar progress-bar-danger" role="progressbar"
+               aria-valuenow="<%= @temperature_last.cpu_temp %>"
+               aria-valuemin="0" aria-valuemax="100"
+               style="width: <%= @temperature_last.cpu_temp %>%">
+            <%= @temperature_last.cpu_temp %> &#8451;
           </div>
         </div>
       </div>

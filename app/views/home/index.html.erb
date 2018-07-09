@@ -8,6 +8,7 @@
     In temp: <span class="label label-default"> <%= @temperature_last.in_temp %> &#8451;</span>
     Out temp: <span class="label label-default"> <%= @temperature_last.out_temp %> &#8451;</span>
     Street temp: <span class="label label-default"> <%= @temperature_last.street_temp %> &#8451;</span>
+    CPU temp: <span class="label label-default"> <%= @temperature_last.cpu_temp %> &#8451;</span>
     Fan speed: <span class="label label-default"> <%= @temperature_last.fan_speed %></span>
     Measure time:
     <span class="label label-default"> <%= @temperature_last.measure_time.strftime('%d-%m-%Y %H:%M') %></span>
@@ -16,23 +17,17 @@
 
 <div class="panel panel-default">
   <div class="panel-heading">
-    Temperature
+    Gruffs
     <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target=".bs-filters-modal">Filters
     </button>
   </div>
   <div class="panel-body">
     <div id="temperature">
     </div>
-  </div>
-</div>
 
-<div class="panel panel-default">
-  <div class="panel-heading">
-    Fan speed
-    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target=".bs-filters-modal">Filters
-    </button>
-  </div>
-  <div class="panel-body">
+    <div id="cpu_temperature">
+    </div>
+
     <div id="fan_speed">
     </div>
   </div>
@@ -112,7 +107,7 @@
     var chart = c3.generate({
         bindto: '#temperature',
         size: {
-            height: 320
+            height: 250
         },
         data: {
             columns: [
@@ -148,12 +143,56 @@
     });
 </script>
 
+<script>
+    var cpu_chart = c3.generate({
+        bindto: '#cpu_temperature',
+        size: {
+            height: 230
+        },
+        data: {
+            columns: [
+                ['cpu_temp', <%= @temperatures.map(&:cpu_temp).map{ |i| i.nil? ? 0 : i }.join(', ') %>]
+            ]
+        },
+        grid: {
+            x: {
+                show: true
+            },
+            y: {
+                show: true
+            }
+        },
+        zoom: {
+            enabled: true,
+            rescale: true,
+            extent: [1, 50]
+        },
+        axis: {
+            rotated: false,
+            x: {
+                type: 'category',
+                categories: <%= raw @labels %>,
+                tick: {
+                    multiline: false,
+                    count: 20
+                }
+            }
+        }
+    });
+
+    setTimeout(function () {
+        cpu_chart.data.colors({
+            cpu_temp: d3.rgb('#ff406e'),
+        });
+    }, 50);
+</script>
+
 
 <script>
     var chart = c3.generate({
         bindto: '#fan_speed',
         size: {
-            height: 280
+            height: 230
         },
         data: {
             columns: [

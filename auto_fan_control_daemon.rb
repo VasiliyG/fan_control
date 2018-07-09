@@ -55,6 +55,14 @@ ActiveRecord::Schema.define do
   unless index_exists?('temperatures', ['street_temp'], name: 'temperatures_street_temp')
     add_index 'temperatures', ['street_temp'], name: 'temperatures_street_temp'
   end
+
+  unless column_exists?(:temperatures, :cpu_temp)
+    add_column :temperatures, :cpu_temp, :float
+  end
+
+  unless index_exists?('temperatures', ['cpu_temp'], name: 'temperatures_cpu_temp')
+    add_index 'temperatures', ['cpu_temp'], name: 'temperatures_cpu_temp'
+  end
 end
 
 class Temperature < ActiveRecord::Base
@@ -185,11 +193,19 @@ while true
           in_temp = Temperature.order(:measure_time).last.try(:in_temp) if in_temp < -100
           out_temp = Temperature.order(:measure_time).last.try(:out_temp) if out_temp < -100
           if need_save_temp
+            begin
+              cpu_temp = %x[sensors -u].split('Package id 0:')[1].split("\n")
+                                       .find { |i| i.include?('temp1_input') }
+                                       .split(':').last.to_i
+            rescue
+              cpu_temp = Temperature.order(:measure_time).last.try(:cpu_temp)
+            end
             Temperature.create(measure_time: Time.at(Time.now.to_i + 25_200),
                                in_temp: in_temp,
                                out_temp: out_temp,
                                street_temp: street_temp,
-                               fan_speed: fan_speed_to_save)
+                               fan_speed: fan_speed_to_save,
+                               cpu_temp: cpu_temp)
             need_save_temp = false
           else
             need_save_temp = true
