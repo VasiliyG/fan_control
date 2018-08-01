@@ -6,11 +6,11 @@ require 'timeout'
 
 TEMP_SENSORS_PIN = 2
 IN_TEMP = '000009e91fbe'.freeze
-TEMP_ARRAY = (200..350).to_a.map { |i| i.to_f / 10 }
-FAN_SPEED_ARRAY = (20..255).to_a
+TEMP_ARRAY = (230..480).to_a.map { |i| i.to_f / 10 }
+FAN_SPEED_ARRAY = (40..255).to_a
 MAX_ERRORS_COUNT = 5
 CORRECT_FAN_SPEED_ARRAY = (0..35).to_a
-CORRECT_TEMP_ARRAY = (150..300).to_a.map { |i| i.to_f / 10 }
+CORRECT_TEMP_ARRAY = (170..300).to_a.map { |i| i.to_f / 10 }
 MAX_FAN_SPEED = FAN_SPEED_ARRAY.last
 MAX_CORRECT_FAN_SPEED = CORRECT_FAN_SPEED_ARRAY.last
 
@@ -108,7 +108,7 @@ class FanControl
 end
 
 class AverageFanSpeed
-  ARRAY_SIZE = 700
+  ARRAY_SIZE = 900
   GROW_SPEED = 150
   AVERAGE_GROW_SPEED = 60
   attr_reader :fan_speed_array
