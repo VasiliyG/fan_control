@@ -121,11 +121,12 @@ class AverageFanSpeed
     preview_average_fan_speed = calc_average_fan_speed
     write_fan_speed_to_array(fan_speed)
 
-    if fan_speed.zero? || fan_speed > preview_average_fan_speed
-      fan_speed
-    else
-      calc_average_fan_speed
-    end
+    calc_fan_speed = if fan_speed.zero? || fan_speed > preview_average_fan_speed
+                       fan_speed
+                     else
+                       calc_average_fan_speed
+                     end
+    calc_fan_speed >= 0 ? calc_fan_speed : 0
   end
 
   private
@@ -211,10 +212,14 @@ while true
             need_save_temp = true
           end
 
-          fan_speed = if in_temp > TEMP_ARRAY.first && in_temp <= TEMP_ARRAY.last
+          fan_speed = if in_temp <= TEMP_ARRAY.first
+                        0
+                      elsif in_temp > TEMP_ARRAY.first && in_temp <= TEMP_ARRAY.last
                         fan_speed_array(in_temp)
                       elsif in_temp > TEMP_ARRAY.last
                         MAX_FAN_SPEED
+                      else
+                        0
                       end
 
           if fan_speed.positive?
