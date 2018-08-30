@@ -118,13 +118,16 @@
 <script>
     $(document).ready(function () {
         setInterval(function () {
-            $('#temperature').load('<%= air_temperatures_path(params) %>')
+            $('#temperature').html('');
+            $('#temperature').load('<%= air_temperatures_path(params) %>');
         }, 30000);
         setInterval(function () {
-            $('#cpu_temperature').load('<%= cpu_temperatures_path(params) %>')
+            $('#cpu_temperature').html('');
+            $('#cpu_temperature').load('<%= cpu_temperatures_path(params) %>');
         }, 32000);
         setInterval(function () {
-            $('#fan_speed').load('<%= fan_speed_path(params) %>')
+            $('#fan_speed').html('');
+            $('#fan_speed').load('<%= fan_speed_path(params) %>');
         }, 34000);
     });
 </script>
