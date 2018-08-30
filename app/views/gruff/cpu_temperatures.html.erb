@@ -1,0 +1,46 @@
+<div id="cpu_temperature">
+</div>
+
+<script>
+    var cpu_chart = c3.generate({
+        bindto: '#cpu_temperature',
+        size: {
+            height: 230
+        },
+        data: {
+            columns: [
+                ['cpu_temp', <%= @temperatures.map(&:cpu_temp).map{ |i| i.nil? ? 0 : i }.join(', ') %>]
+            ]
+        },
+        grid: {
+            x: {
+                show: true
+            },
+            y: {
+                show: true
+            }
+        },
+        zoom: {
+            enabled: true,
+            rescale: true,
+            extent: [1, 50]
+        },
+        axis: {
+            rotated: false,
+            x: {
+                type: 'category',
+                categories: <%= raw @labels %>,
+                tick: {
+                    multiline: false,
+                    count: 20
+                }
+            }
+        }
+    });
+
+    setTimeout(function () {
+        cpu_chart.data.colors({
+            cpu_temp: d3.rgb('#ff406e'),
+        });
+    }, 50);
+</script>

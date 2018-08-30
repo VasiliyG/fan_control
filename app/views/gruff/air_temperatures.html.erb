@@ -1,0 +1,42 @@
+<div id="air_temperature">
+</div>
+
+<script>
+    var chart = c3.generate({
+        bindto: '#air_temperature',
+        size: {
+            height: 250
+        },
+        data: {
+            columns: [
+                ['In temp', <%= @temperatures.map(&:in_temp).map{ |i| i.nil? ? 0 : i }.join(', ') %>],
+                ['Out temp', <%= @temperatures.map(&:out_temp).map{ |i| i.nil? ? 0 : i }.join(', ') %>],
+                ['Street temp', <%= @temperatures.map(&:street_temp).map{ |i| i.nil? ? 0 : i }.join(', ') %>]
+            ]
+        },
+        grid: {
+            x: {
+                show: true
+            },
+            y: {
+                show: true
+            }
+        },
+        zoom: {
+            enabled: true,
+            rescale: true,
+            extent: [1, 50]
+        },
+        axis: {
+            rotated: false,
+            x: {
+                type: 'category',
+                categories: <%= raw @labels %>,
+                tick: {
+                    multiline: false,
+                    count: 20
+                }
+            }
+        }
+    });
+</script>

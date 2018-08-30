@@ -104,132 +104,27 @@
 </script>
 
 <script>
-    var chart = c3.generate({
-        bindto: '#temperature',
-        size: {
-            height: 250
-        },
-        data: {
-            columns: [
-                ['In temp', <%= @temperatures.map(&:in_temp).map{ |i| i.nil? ? 0 : i }.join(', ') %>],
-                ['Out temp', <%= @temperatures.map(&:out_temp).map{ |i| i.nil? ? 0 : i }.join(', ') %>],
-                ['Street temp', <%= @temperatures.map(&:street_temp).map{ |i| i.nil? ? 0 : i }.join(', ') %>]
-            ]
-        },
-        grid: {
-            x: {
-                show: true
-            },
-            y: {
-                show: true
-            }
-        },
-        zoom: {
-            enabled: true,
-            rescale: true,
-            extent: [1, 50]
-        },
-        axis: {
-            rotated: false,
-            x: {
-                type: 'category',
-                categories: <%= raw @labels %>,
-                tick: {
-                    multiline: false,
-                    count: 20
-                }
-            }
-        }
-    });
+   $('#temperature').load('<%= air_temperatures_path(params) %>')
 </script>
 
 <script>
-    var cpu_chart = c3.generate({
-        bindto: '#cpu_temperature',
-        size: {
-            height: 230
-        },
-        data: {
-            columns: [
-                ['cpu_temp', <%= @temperatures.map(&:cpu_temp).map{ |i| i.nil? ? 0 : i }.join(', ') %>]
-            ]
-        },
-        grid: {
-            x: {
-                show: true
-            },
-            y: {
-                show: true
-            }
-        },
-        zoom: {
-            enabled: true,
-            rescale: true,
-            extent: [1, 50]
-        },
-        axis: {
-            rotated: false,
-            x: {
-                type: 'category',
-                categories: <%= raw @labels %>,
-                tick: {
-                    multiline: false,
-                    count: 20
-                }
-            }
-        }
-    });
-
-    setTimeout(function () {
-        cpu_chart.data.colors({
-            cpu_temp: d3.rgb('#ff406e'),
-        });
-    }, 50);
+    $('#cpu_temperature').load('<%= cpu_temperatures_path(params) %>')
 </script>
 
-
 <script>
-    var chart = c3.generate({
-        bindto: '#fan_speed',
-        size: {
-            height: 230
-        },
-        data: {
-            columns: [
-                ['Fan speed', <%= @temperatures.map(&:fan_speed).join(', ') %>]
-            ]
-        },
-        grid: {
-            x: {
-                show: true
-            },
-            y: {
-                show: true
-            }
-        },
-        zoom: {
-            enabled: true,
-            rescale: true,
-            extent: [1, 50]
-        },
-        axis: {
-            rotated: false,
-            x: {
-                type: 'category',
-                categories: <%= raw @labels %>,
-                tick: {
-                    multiline: false,
-                    count: 20
-                }
-            }
-        }
-    });
+    $('#fan_speed').load('<%= fan_speed_path(params) %>')
 </script>
 
 <script>
     $(document).ready(function () {
         setInterval(function () {
-            window.location.reload(1);
+            $('#temperature').load('<%= air_temperatures_path(params) %>')
         }, 30000);
+        setInterval(function () {
+            $('#cpu_temperature').load('<%= cpu_temperatures_path(params) %>')
+        }, 32000);
+        setInterval(function () {
+            $('#fan_speed').load('<%= fan_speed_path(params) %>')
+        }, 34000);
     });
 </script>

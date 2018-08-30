@@ -1,0 +1,40 @@
+<div id="fan_speed">
+</div>
+
+<script>
+    var chart = c3.generate({
+        bindto: '#fan_speed',
+        size: {
+            height: 230
+        },
+        data: {
+            columns: [
+                ['Fan speed', <%= @temperatures.map(&:fan_speed).join(', ') %>]
+            ]
+        },
+        grid: {
+            x: {
+                show: true
+            },
+            y: {
+                show: true
+            }
+        },
+        zoom: {
+            enabled: true,
+            rescale: true,
+            extent: [1, 50]
+        },
+        axis: {
+            rotated: false,
+            x: {
+                type: 'category',
+                categories: <%= raw @labels %>,
+                tick: {
+                    multiline: false,
+                    count: 20
+                }
+            }
+        }
+    });
+</script>

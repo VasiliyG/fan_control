@@ -1,0 +1,2 @@
+module GruffHelper
+end
