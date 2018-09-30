@@ -116,7 +116,7 @@
 </script>
 
 <script>
-    $(document).ready(function () {
+    /*$(document).ready(function () {
         setInterval(function () {
             $('#temperature').html('');
             $('#temperature').load('<%= air_temperatures_path(params) %>');
@@ -129,5 +129,10 @@
             $('#fan_speed').html('');
             $('#fan_speed').load('<%= fan_speed_path(params) %>');
         }, 34000);
+    });*/
+    $(document).ready(function () {
+        setInterval(function () {
+            window.location.reload(1);
+        }, 30000);
     });
 </script>
